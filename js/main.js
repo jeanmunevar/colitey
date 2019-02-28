@@ -22,7 +22,7 @@ document.getElementById("formulario").addEventListener('submit', (evt => {
             alert("Verifique sus credenciales, no registra dicha información en nuestra base de datos");
         }
         else {
-            alert("Alumno disponible para votar");
+
             document.getElementById('formularioVotacion').style.display = "";
         }
     }).catch((error)=>{
