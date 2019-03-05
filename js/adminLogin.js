@@ -19,10 +19,14 @@ document.getElementById("formulario").addEventListener('submit', (evt => {
         if (data.data === "vacio")
         {
             alert("Verifique sus credenciales, no registra dicha información en nuestra base de datos");
+            var contexto = false;
         }
         else {
 
             alert("Bienvenido administrador");
+            document.getElementById('formulario').style.display = "none";
+            document.getElementById('candidates').style.display ='';
+            var contexto = true;
         }
     }).catch((error)=>{
         console.log(error.message);

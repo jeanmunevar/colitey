@@ -38,6 +38,6 @@ if ($registros == 0)
 }
 else{
     echo json_encode([
-        'data' => $infoEstudiante
+        'data' => "Bien hecho"
     ], JSON_UNESCAPED_UNICODE);
 }

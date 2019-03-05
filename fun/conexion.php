@@ -17,7 +17,7 @@ function connectDB(){
     }
     return $conexion;
 }
-connectDB();
+
 function disconnectDB($conexion){
     $close = mysqli_close($conexion);
     return $close;
