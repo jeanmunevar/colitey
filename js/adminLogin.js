@@ -24,9 +24,8 @@ document.getElementById("formulario").addEventListener('submit', (evt => {
         else {
 
             alert("Bienvenido administrador");
-            document.getElementById('formulario').style.display = "none";
-            document.getElementById('candidates').style.display ='';
-            var contexto = true;
+            window.location = './add.html';
+
         }
     }).catch((error)=>{
         console.log(error.message);

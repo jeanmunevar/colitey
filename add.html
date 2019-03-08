@@ -6,6 +6,11 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- La cdn de vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue@latest"></script>
+    <script src="https://unpkg.com/vue-select@latest"></script>
+    <!--#########################-->
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
@@ -38,7 +43,7 @@
                             <a href="index.html"><img src="img/school-images/logo1.png" width="20%" alt=""></a>
                         </div>
                         <div class="login-content">
-                            <a href="#">Registrese</a> / <a href="#">Ingrese</a>
+
                         </div>
                     </div>
                 </div>
@@ -71,36 +76,10 @@
                         <div class="classynav">
                             <ul>
                                 <img src="./img/icons/inicio.png" width="2%" class="iconos-ocultos" alt="">
-                                <li><a href="#">Inicio</a></li>
+                                <li><a href="index.html">Inicio</a></li>
                                 <img src="./img/icons/INSTITUCIONAL.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
                                 <li><a href="index.html"> Institucional</a></li>
                                 <li><a href="#">Jornada escolar</a>
-                                    <!--<div class="megamenu">-->
-                                    <!--<ul class="single-mega cn-col-4">-->
-                                    <!--<li><a href="#">Home</a></li>-->
-                                    <!--<li><a href="#">Services &amp; Features</a></li>-->
-                                    <!--<li><a href="#">Accordions and tabs</a></li>-->
-                                    <!--<li><a href="#">Menu ideas</a></li>-->
-                                    <!--<li><a href="#">Students Gallery</a></li>-->
-                                    <!--</ul>-->
-                                    <!-- <ul class="single-mega cn-col-4">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">Services &amp; Features</a></li>
-                                        <li><a href="#">Accordions and tabs</a></li>
-                                        <li><a href="#">Menu ideas</a></li>
-                                        <li><a href="#">Students Gallery</a></li>
-                                    </ul>
-                                    <ul class="single-mega cn-col-4">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">Services &amp; Features</a></li>
-                                        <li><a href="#">Accordions and tabs</a></li>
-                                        <li><a href="#">Menu ideas</a></li>
-                                        <li><a href="#">Students Gallery</a></li>
-                                    </ul> -->
-                                    <!--<div class="single-mega cn-col-4">-->
-                                    <!--<img src="img/bg-img/bg-1.jpg" alt="">-->
-                                    <!--</div>-->
-                                    <!--</div>-->
                                     <ul class="dropdown">
                                         <li><a href="index.html">Primaria</a></li>
                                         <li><a href="about-us.html">Secundaria</a></li>
@@ -113,21 +92,13 @@
                                 <li><a href="about-us.html">Zona rápida</a>
 
                                     <ul class="dropdown">
-                                        <li><a href="#">Votaciones</a></li>
+                                        <li><a href="./voting.html">Votaciones</a></li>
+                                        <li><a href="./votingAdmin.html">Administrador</a></li>
                                     </ul>
+
                                 </li>
 
-                                <!-- <li><a href="#">Primaria</a>
-                                    <ul class="dropdown">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="course.html">Course</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="elements.html">Elements</a></li>
-                                    </ul>
-                                </li> -->
-                                <!--<li><a href="course.html">Course</a></li>-->
+
                                 <li><a href="contact.html">Contactenos</a></li>
                             </ul>
                         </div>
@@ -154,126 +125,80 @@
     </div>
 </div>
 <!-- ##### Breadcumb Area End ##### -->
+<section style="margin-bottom: 10%">
 
-<!-- ##### About Us Area Start ##### -->
-<section class="about-us-area mt-50 section-padding-100">
-    <div class="container" style="padding-right: 10%">
-        <span style="font-size: 1.5em; text-align: justify; " >A continuación podrá encontrar el formulario para ejercer su derecho como estudiante al voto, para lo cual debe proporcionar la información solicitada en el siguiente formulario</span>
-    </div>
-
-    <form action="" id="formulario" class="form-control col-md-6"  >
-        <h2 style="text-align: center">Ingrese sus datos</h2>
-        <div class="form-group">
-            <label for="">Tipo de documento</label>
-            <select name="" class="custom-select" id="tipoDocumento">
-                <option value="1">Registro civil</option>
-                <option value="2">Tarjeta de identidad</option>
-                <option value="3">Cedula</option>
-                <option value="4">Documento de extranjería</option>
-            </select>
-        </div>
-        <div class="form-group ">
-            <label for="exampleInputEmail1">Numero de documento</label>
-            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su numero de documento">
-
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Fecha de nacimiento</label>
-            <input type="date" class="form-control"  placeholder="Fecha de nacimiento">
-        </div>
-        <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
 </section>
+
 <!-- ##### About Us Area End ##### -->
+<!--TODO seguir con el formulario para ingresar candidatos-->
+<div id="swap">
+    <section style=" width: 100%; " id="candidates" >
+        <article style="padding: 0 25% 5% 25%">
+            <h2>Agregar candidato </h2>
+            <form action="" v-on:submit.prevent="add">
+                <div class="form-group">
+                    <label for="tipoDocumento">Tipo de documento</label>
+                    <v-select :options="tiposDocumento" v-model="candidato.tipoDocumento"></v-select>
+                </div>
+                <div class="form-group">
+                    <label for="documento">Documento</label>
+                    <input type="number" class="form-control" id="documento" v-model="candidato.documento">
+                </div>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" v-model="candidato.nombre">
+                </div>
+                <div class="form-group">
+                    <label for="cargo">Cargo</label>
+                    <v-select :options="cargos" v-model="candidato.cargo" id="cargo"></v-select>
+                    <!--<select name="cargo" id="cargo" class="form-control">-->
+                    <!--<option value="1"></option>-->
+                    <!--</select>-->
+                </div>
+                <div class="form-group" >
+                    <label for="grado" > Grado y curso</label>
+                    <v-select :options="grados" v-model="candidato.grado" id="grado"></v-select>
+                </div>
+                <div class="form-group">
+                    <label for="jornada">Jornada</label>
+                    <v-select :options="jornadas" v-model="candidato.jornada"></v-select>
+                </div>
+                <div class="form-group">
+                    <label for="">Fotografia</label>
+                    <input type="file"  ref="imagenCandidato" @change="onFileChange" accept="image/png" class="form-control" id="imagenCandidato"  data-validate="Anexe imagen del candidato">
+                    <img :src="image">
+                </div>
+                <button type="submit" class="btn btn-primary">Registrar</button>
+            </form>
+            <h2>Listado de candidatos</h2>
+            <table class="table" id="listado" style="width: 100%">
+                <tr>
+                    <th>Identificación</th>
+                    <th>Nombre</th>
+                    <th>Grado</th>
+                    <th>Jornada</th>
+                    <th>Cargo</th>
+                    <th>Imagen</th>
+                    <th>Opciones</th>
+                </tr>
+                <tr v-for="candidato in candidate">
+                    <td>{{candidato.documento}}</td>
+                    <td>{{candidato.nombre}}</td>
+                    <td>{{candidato.grado}}/{{candidato.curso}}</td>
+                    <td>{{candidato.jornada}}</td>
+                    <td>{{candidato.nombreCargo}}</td>
+                    <td><img  v-bind:src="candidato.imagen" /></td>
+                    <td>
+                        <button @click="editar(candidato)" type="button" class="btn btn-warning" >Editar</button>
+                        <button @click="eliminar(candidato)" type="button" class="btn btn-danger" >Eliminar</button>
 
-<!-- ##### Team Area Start ##### -->
-<section>
+                    </td>
+                </tr>
+            </table>
+        </article>
+    </section>
 
-</section>
-<!--<section class="teachers-area section-padding-0-100">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-12">-->
-<!--                <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">-->
-<!--                    <span>The Best</span>-->
-<!--                    <h3>Meet the Teachers</h3>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="row">-->
-<!--
-           <div class="col-12 col-sm-6 col-lg-3">-->
-<!--                <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="400ms">-->
-<!--
-               <div class="teachers-thumbnail">-->
-<!--                        <img src="img/bg-img/tea1.jpg" alt="">-->
-<!--                    </div>-->
-<!--
-                   <div class="teachers-info mt-30">-->
-<!--                        <h5>Maria D. Smith</h5>-->
-<!--                        <span>Marketing Proffesor</span>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--
-          <div class="col-12 col-sm-6 col-lg-3">-->
-<!--                <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="500ms">-->
-<!--                    Thumbnail -->
-<!--                    <div class="teachers-thumbnail">-->
-<!--                        <img src="img/bg-img/tea2.jpg" alt="">-->
-<!--                    </div>-->
-<!--                     Meta Info -->
-<!--                    <div class="teachers-info mt-30">-->
-<!--                        <h5>Simon Duval</h5>-->
-<!--                        <span>Digital Proffesor</span>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--             Single Teachers -->
-<!--            <div class="col-12 col-sm-6 col-lg-3">-->
-<!--                <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="600ms">-->
-<!--                    Thumbnail -->
-<!--                    <div class="teachers-thumbnail">-->
-<!--                        <img src="img/bg-img/tea3.jpg" alt="">-->
-<!--                    </div>-->
-<!--                     Meta Info -->
-<!--                    <div class="teachers-info mt-30">-->
-<!--                        <h5>James Hogan</h5>-->
-<!--                        <span>HTML Proffesor</span>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            Single Teachers -->
-<!--            <div class="col-12 col-sm-6 col-lg-3">-->
-<!--                <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="700ms">-->
-<!--
-                <div class="teachers-thumbnail">-->
-<!--                        <img src="img/bg-img/tea4.jpg" alt="">-->
-<!--                    </div>-->
-<!--
-                  <div class="teachers-info mt-30">-->
-<!--                        <h5>Claudia Williams</h5>-->
-<!--                        <span>Marketing Proffesor</span>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="row">-->
-<!--            <div class="col-12">-->
-<!--                <div class="view-all text-center wow fadeInUp" data-wow-delay="800ms">-->
-<!--                    <a href="#" class="btn academy-btn">All Teachers</a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<!-- ##### Features Area Start ##### -->
+</div>
 
 <!-- ##### Footer Area Start ##### -->
 <footer class="footer-area">
@@ -336,15 +261,15 @@
                         </div>
                         <div class="single-contact d-flex mb-30">
                             <i class="icon-placeholder"></i>
-                            <p>4127/ 5B-C Mislane Road, Gibraltar, UK</p>
+                            <p>Carrera 21 No 39 05</p>
                         </div>
                         <div class="single-contact d-flex mb-30">
                             <i class="icon-telephone-1"></i>
-                            <p>Main: 203-808-8613 <br>Office: 203-808-8648</p>
+                            <p>Telefonos <br> 6343559</p>
                         </div>
                         <div class="single-contact d-flex">
                             <i class="icon-contract"></i>
-                            <p>office@yourbusiness.com</p>
+                            <p>colegioitey@itey.edu.co</p>
                         </div>
                     </div>
                 </div>
@@ -366,6 +291,12 @@
 <script src="js/plugins/plugins.js"></script>
 <!-- Active js -->
 <script src="js/active.js"></script>
+<script src="https://unpkg.com/vue@latest"></script>
+<script src="https://unpkg.com/vue-select@latest"></script>
+<script src="js/candidatos.js"></script>
+<script>
+
+</script>
 <style>
 
 </style>

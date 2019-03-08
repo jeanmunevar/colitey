@@ -23,6 +23,17 @@ if ($result){
         array_push($infoEstudiante, $alumno);
     }
 }
+///////////////////////////////
+$consultaCandidatos = 'SELECT documento, cargo, cursosgrados.curso, cursosgrados.grado ,nombre, imagen FROM candidatos, cursosgrados WHERE candidatos.cargo = "2" AND candidatos.grado_curso = cursosgrados.id';
+$res = mysqli_query($conexion, $consultaCandidatos);
+if ($res)
+{
+    $infoCandidatos = array();
+    while ($candidatos= mysqli_fetch_assoc($res))
+    {
+        array_push($infoCandidatos, $candidatos);
+    }
+}
 
 $registros = mysqli_num_rows($result);
 if ($registros == 0)
@@ -35,6 +46,8 @@ if ($registros == 0)
 }
 else{
     echo json_encode([
-        'data' => $infoEstudiante
+        'data' => $infoEstudiante,
+        'dataCandidato' => $infoCandidatos
+
     ], JSON_UNESCAPED_UNICODE);
 }

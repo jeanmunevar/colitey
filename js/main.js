@@ -24,6 +24,7 @@ document.getElementById("formulario").addEventListener('submit', (evt => {
         else {
 
             document.getElementById('formularioVotacion').style.display = "";
+
         }
     }).catch((error)=>{
         console.log(error.message);

@@ -30,7 +30,7 @@ if(isset($_GET['tipo'])){
             }else{
                 echo json_encode([
                     'estado' => 'Error',
-                    'mensaje' => 'Error al consultar '. mysqli_error($conexion)
+                    'mensaje' => 'Error al consultar '
                 ]);
             }
             break;
@@ -46,7 +46,7 @@ if(isset($_GET['tipo'])){
             }else{
                 echo json_encode([
                     'estado' => 'Error',
-                    'mensaje' => 'Error al consultar '. mysqli_error($conexion)
+                    'mensaje' => 'Error al consultar '
                 ]);
             }
             break;
@@ -79,7 +79,7 @@ if (isset($_POST['documento']))
     if($resultado = mysqli_query($conexion, $sql)){
         if(mysqli_num_rows($resultado) > 0){
             // Actualización
-            $update = "UPDATE candidatos SET nombre = '$nombre' , tipoDocumento = '$tipoDocumento', grado_curso = '$grado', imagen = '$imagen', jornada = '$jornada'";
+            $update = "UPDATE candidatos SET nombre = '$nombre' , tipoDocumento = '$tipoDocumento', grado_curso = '$grado', imagen = '$imagen', jornada = '$jornada' WHERE documento = $documento";
             if(mysqli_query($conexion, $update)){
                 echo json_encode([
                     'estado' => 'ok',
@@ -88,7 +88,7 @@ if (isset($_POST['documento']))
             }else{
                 echo json_encode([
                     'estado' => 'Error',
-                    'mensaje' => 'Error al actualizar '. mysqli_error($conexion)
+                    'mensaje' => 'Error al actualizar '
                 ]);
             }
         }else{
@@ -102,14 +102,14 @@ if (isset($_POST['documento']))
             }else{
                 echo json_encode([
                     'estado' => 'Error',
-                    'mensaje' => 'Error al crear '. mysqli_error($conexion)
+                    'mensaje' => 'Error al crear '
                 ]);
             }
         }
     }else{
         echo json_encode([
             'estado' => 'Error',
-            'mensaje' => 'Error al consultar '. mysqli_error($conexion)
+            'mensaje' => 'Error al consultar '
         ]);
     }
 }

@@ -4,12 +4,20 @@ Vue.component('v-select', VueSelect.VueSelect);
 let app = new Vue({
     el: '#swap',
     data:{
+        candidato:{
+            tipoDocumento: "",
+            documento: "",
+            nombre: "",
+            cargo: "",
+            grado: "",
+            jornada: "",
+        },
         nombresArchivos: [],
         image: "",
         picture: '',
         cargos: [
-            {value: '1', label:'Personero'},
-            {value: '2', label: 'Representante de grado'},
+            {value: '1', label:'Representante de grado'},
+            {value: '2', label: 'Personero'},
             {value: '3', label: 'Delegado profesorado'}
         ],
         tiposDocumento:[
@@ -129,17 +137,10 @@ let app = new Vue({
             {value:'1108' , label:'ONCE H'},
 
         ],
-        candidato:{
-            tipoDocumento: "",
-            documento: "",
-            nombre: "",
-            cargo: "",
-            grado: "",
-            jornada: "",
-        },
         candidate: [],
         candidatoEnEdicion: '',
-        editando: false
+        editando: false,
+        holdthis: ""
 
     },
     methods: {
@@ -183,7 +184,7 @@ let app = new Vue({
                 datos.append('documento', this.candidato.documento);
                 datos.append('cargo', this.candidato.cargo.value);
                 datos.append('nombre', this.candidato.nombre);
-                datos.append('grado', "999");
+                datos.append('grado', this.candidato.grado.value);
                 datos.append('jornada', this.candidato.jornada.value);
             }
 
@@ -197,21 +198,18 @@ let app = new Vue({
             }).then((data)=>{
                 alert(data.mensaje);
                 if (data.estado === 'ok'){
-                    if (app.editando)
-                    {
-                        const index = app.candidate.indexOf(app.candidatoEnEdicion);
+                    if(app.editando){
+                        //
+                        const index = app.candidate.indexOf(app.candidatoEnEdicion)
                         app.candidate.splice(index, 1, app.candidato)
                     }
-                    else {
-                        console.log(app.candidato);
-                        app.candidato.cargo = app.candidato.cargo.label;
-                        app.candidato.jornada = app.candidato.jornada.label;
-                        app.candidato.tipoDocumento = app.candidato.tipoDocumento.label;
-                        app.candidato.grado = app.candidato.grado.label;
-                        app.candidate.push(app.candidato)
+                    else{
+                        app.candidate.push(app.candidato);
                     }
-                    // app.clean();
+
+                    location.reload(true);
                     app.editando = false;
+
 
                 }
             }).catch((err) =>{
@@ -244,8 +242,8 @@ let app = new Vue({
             this.candidato.jornada = '';
         },
         editar(candidato){
-            this.candidatoEnEdicion = candidato;
-            this.candidato = JSON.parse(JSON.stringify(candidato));
+            this.candidatoEnEdicion = candidato
+            this.candidato = JSON.parse(JSON.stringify(candidato))
             this.editando = true
         }
 

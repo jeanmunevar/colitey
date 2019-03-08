@@ -149,79 +149,7 @@
 </section>
 <!-- ##### About Us Area End ##### -->
 <!--TODO seguir con el formulario para ingresar candidatos-->
-<div id="swap">
-<section style="display:none; width: 100%; " id="candidates" >
-    <article style="padding: 0 25% 5% 25%">
-        <h2>Agregar candidato </h2>
-        <form action="" v-on:submit.prevent="add">
-            <div class="form-group">
-                <label for="tipoDocumento">Tipo de documento</label>
-                <v-select :options="tiposDocumento" v-model="candidato.tipoDocumento"></v-select>
-            </div>
-            <div class="form-group">
-                <label for="documento">Documento</label>
-                <input type="number" class="form-control" id="documento" v-model="candidato.documento">
-            </div>
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" class="form-control" id="name" v-model="candidato.nombre">
-            </div>
-            <div class="form-group">
-                <label for="cargo">Cargo</label>
-                <v-select :options="cargos" v-model="candidato.cargo" id="cargo"></v-select>
-                <!--<select name="cargo" id="cargo" class="form-control">-->
-                    <!--<option value="1"></option>-->
-                <!--</select>-->
-            </div>
-            <div class="form-group" >
-                <label for="grado" > Grado y curso</label>
-                <v-select :options="grados" v-model="candidato.grado" id="grado"></v-select>
-            </div>
-            <div class="form-group">
-                <label for="jornada">Jornada</label>
-                <v-select :options="jornadas" v-model="candidato.jornada"></v-select>
-            </div>
-            <div class="form-group">
-                <label for="">Fotografia</label>
-                <input type="file"  ref="imagenCandidato" @change="onFileChange" accept="image/png" class="form-control" id="imagenCandidato"  data-validate="Anexe imagen del candidato">
-                <img :src="image">
-            </div>
-            <button type="submit" class="btn btn-primary">Registrar</button>
-        </form>
-        <h2>Listado de candidatos</h2>
-        <table class="table" id="listado" style="width: 100%">
-            <tr>
-                <th>Identificación</th>
-                <th>Nombre</th>
-                <th>Grado</th>
-                <th>Jornada</th>
-                <th>Cargo</th>
-                <th>Imagen</th>
-                <th>Opciones</th>
-            </tr>
-            <tr v-for="candidato in candidate">
-                <td>{{candidato.documento}}</td>
-                <td>{{candidato.nombre}}</td>
-                <td>{{candidato.grado}}/{{candidato.curso}}</td>
-                <td>{{candidato.jornada}}</td>
-                <td>{{candidato.nombreCargo}}</td>
-                <td><img  v-bind:src="candidato.imagen" /></td>
 
-                <td>
-                    <button @click="editar(candidato)" class="btn btn-warning" type="button" >Editar</button>
-                    <button @click="eliminar(candidato)" type="button" class="btn btn-danger" >Eliminar</button>
-                </td>
-            </tr>
-        </table>
-    </article>
-</section>
-    <div v-if="candidato.cargo.value = 3 ">
-
-    </div>
-    <div v-else>
-        Now you don't
-    </div>
-</div>
 
 <!-- ##### Footer Area Start ##### -->
 <footer class="footer-area">
@@ -317,7 +245,7 @@
 <script src="js/adminLogin.js"></script>
 <script src="https://unpkg.com/vue@latest"></script>
 <script src="https://unpkg.com/vue-select@latest"></script>
-<script src="js/candidatos.js"></script>
+<
 <script>
 
 </script>
