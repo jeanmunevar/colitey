@@ -31,7 +31,7 @@ let app = new Vue({
             {value:'2', label:'Jornada tarde'}
         ],
         grados:[
-            {value:'1' , label:'TRANSICIÓN A TARDE'},
+            {value:'1' , label:'TRANSICIÓN A TARDE', grado: "0"},
             {value:'2' , label:'TRANSICIÓN B TARDE'},
             {value:'3' , label:'TRANSICIÓN C TARDE'},
             {value:'4' , label:'TRANSICIÓN D TARDE'},

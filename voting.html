@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- La cdn de vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue@latest"></script>
 
     <!-- Title -->
     <title>Colegio ITEY</title>
@@ -158,16 +161,17 @@
 <!-- ##### Breadcumb Area End ##### -->
 
 <!-- ##### About Us Area Start ##### -->
-<section class="about-us-area mt-50 section-padding-100">
+<div id="app">
+<section class="about-us-area mt-50 section-padding-100" id="ingreso">
     <div class="container" style="padding-right: 10%">
-        <span style="font-size: 1.5em; text-align: justify; " >A continuación podrá encontrar el formulario para ejercer su derecho como estudiante al voto, para lo cual debe proporcionar la información solicitada en el siguiente formulario</span>
+        <span style="font-size: 1.5em; text-align: justify; " >A continuación podrá encontrar el formulario para ejercer su derecho al voto, para lo cual debe proporcionar la información solicitada en el siguiente formulario</span>
     </div>
 
-    <form action="" id="formulario" class="form-control col-md-6"  >
+    <form action="" id="formulario" class="form-control col-md-6" v-on:submit.prevent="query"  >
         <h2 style="text-align: center">Ingrese sus datos</h2>
         <div class="form-group">
             <label for="">Tipo de documento</label>
-            <select name="" class="custom-select" id="tipoDocumento" required >
+            <select name="" class="custom-select" id="tipoDocumento" required v-model="votante.tipoDocumento">
                 <option value="1">Registro civil</option>
                 <option value="2">Tarjeta de identidad</option>
                 <option value="3">Cedula</option>
@@ -176,12 +180,12 @@
         </div>
         <div class="form-group ">
             <label for="exampleInputEmail1">Numero de documento</label>
-            <input type="number" class="form-control" id="numeroDocumento" aria-describedby="emailHelp" placeholder="Ingrese su numero de documento" required >
+            <input type="number" class="form-control" id="numeroDocumento" aria-describedby="emailHelp" placeholder="Ingrese su numero de documento" required v-model="votante.documento">
             
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1">Fecha de nacimiento</label>
-            <input type="date" class="form-control"  id="fechaNacimiento" placeholder="Fecha de nacimiento" required>
+            <input type="date" class="form-control"  id="fechaNacimiento" placeholder="Fecha de nacimiento" required v-model="votante.fechaNacimiento">
         </div>
 
         <button type="submit" class="btn btn-primary">Ingresar</button>
@@ -189,9 +193,10 @@
 </section>
 <!-- ##### About Us Area End ##### -->
 <section class="teachers-area section-padding-0-100">
-    <form action="" id="formularioVotacion" style="display: none">
+    <form action="" id="formularioVotacion" style="display: none; margin-top: 10%">
     <div class="container">
         <div class="row">
+            <h4 STYLE="margin-top: 1%">Bienvenido {{votante.nombre}}</h4>
             <div class="col-12">
                 <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
                     <span>Escoja su candidato a personería</span>
@@ -206,61 +211,64 @@
 
         <div class="row">
             <!-- Single Teachers -->
-            <div class="col-12 col-sm-6 col-lg-3">
+
+
+            <div class="col-12 col-sm-6 col-lg-3" v-for="datar in candidatosPersoneria">
                 <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="400ms">
                     <!-- Thumbnail -->
                     <div class="teachers-thumbnail">
-                        <img src="img/bg-img/tea1.jpg" alt=""><input type="radio" id="candidato1" name="subject" class="subject-list">
+                        <img  v-bind:src="datar.imagen" alt="imagen Candidato" />
+                        <input type="radio" id="candidato1" name="subject" class="subject-list">
                     </div>
                     <!-- Meta Info -->
                     <div class="teachers-info mt-30">
-                        <h5>Maria Alejandra Rodriguez</h5>
-                        <span>Estudiante grado 11 A</span>
+                        <h5>{{datar.nombre}}</h5>
+                        <span>Estudiante {{datar.grado_curso}}</span>
                     </div>
                 </div>
             </div>
             <!-- Single Teachers -->
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="500ms">
-                    <!-- Thumbnail -->
-                    <div class="teachers-thumbnail">
-                        <img src="img/bg-img/tea2.jpg" alt=""><input type="radio" id="candidato2"  name="subject" class="subject-list">
-                    </div>
-                    <!-- Meta Info -->
-                    <div class="teachers-info mt-30">
-                        <h5>Pedro Fuentes</h5>
-                        <span>Estudiante grado 11 B</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Teachers -->
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="600ms">
-                    <!-- Thumbnail -->
-                    <div class="teachers-thumbnail">
-                        <img src="img/bg-img/tea3.jpg" alt=""><input type="radio" id="candidato3" name="subject" class="subject-list">
-                    </div>
-                    <!-- Meta Info -->
-                    <div class="teachers-info mt-30">
-                        <h5>James Lombana</h5>
-                        <span>Estudiante grado 11 C</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Teachers -->
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="700ms">
-                    <!-- Thumbnail -->
-                    <div class="teachers-thumbnail">
-                        <img src="img/bg-img/tea4.jpg" alt=""><input type="radio" id="candidato4" name="subject" class="subject-list">
-                    </div>
-                    <!-- Meta Info -->
-                    <div class="teachers-info mt-30">
-                        <h5>Claudia Blanco</h5>
-                        <span>Estudiante grado 11 D</span>
-                    </div>
-                </div>
-            </div>
+            <!--<div class="col-12 col-sm-6 col-lg-3">-->
+                <!--<div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="500ms">-->
+                    <!--&lt;!&ndash; Thumbnail &ndash;&gt;-->
+                    <!--<div class="teachers-thumbnail">-->
+                        <!--<img src="img/bg-img/tea2.jpg" alt=""><input type="radio" id="candidato2"  name="subject" class="subject-list">-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; Meta Info &ndash;&gt;-->
+                    <!--<div class="teachers-info mt-30">-->
+                        <!--<h5>Pedro Fuentes</h5>-->
+                        <!--<span>Estudiante grado 11 B</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; Single Teachers &ndash;&gt;-->
+            <!--<div class="col-12 col-sm-6 col-lg-3">-->
+                <!--<div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="600ms">-->
+                    <!--&lt;!&ndash; Thumbnail &ndash;&gt;-->
+                    <!--<div class="teachers-thumbnail">-->
+                        <!--<img src="img/bg-img/tea3.jpg" alt=""><input type="radio" id="candidato3" name="subject" class="subject-list">-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; Meta Info &ndash;&gt;-->
+                    <!--<div class="teachers-info mt-30">-->
+                        <!--<h5>James Lombana</h5>-->
+                        <!--<span>Estudiante grado 11 C</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; Single Teachers &ndash;&gt;-->
+            <!--<div class="col-12 col-sm-6 col-lg-3">-->
+                <!--<div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="700ms">-->
+                    <!--&lt;!&ndash; Thumbnail &ndash;&gt;-->
+                    <!--<div class="teachers-thumbnail">-->
+                        <!--<img src="img/bg-img/tea4.jpg" alt=""><input type="radio" id="candidato4" name="subject" class="subject-list">-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; Meta Info &ndash;&gt;-->
+                    <!--<div class="teachers-info mt-30">-->
+                        <!--<h5>Claudia Blanco</h5>-->
+                        <!--<span>Estudiante grado 11 D</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
 
         <div class="row">
@@ -275,9 +283,7 @@
     </form>
 </section>
 <!-- ##### Team Area Start ##### -->
-<section>
-
-</section>
+</div>
 <!--<section class="teachers-area section-padding-0-100">-->
 <!--    <div class="container">-->
 <!--        <div class="row">-->

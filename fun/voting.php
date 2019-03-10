@@ -10,44 +10,97 @@ $id=(file_get_contents("php://input"));
 $documento = json_decode($id, true);
 $conexion = connectDB();
 
+
 $id = $documento['documento'];
 $fechaBorn = $documento['fechaNacimiento'];
 
 
-$consultaEstudiante = "SELECT * FROM estudiante WHERE documento = $id AND estudiante.fechaNacimiento = '$fechaBorn'";
+
+
+$consultaEstudiante = "SELECT * FROM estudiante INNER JOIN cursosgrados ON cursosgrados.id = estudiante.salon WHERE documento = '$id' AND estudiante.fechaNacimiento = '$fechaBorn'";
 //Se genera la consulta
 $result = mysqli_query($conexion, $consultaEstudiante);
 $infoEstudiante = array();
+
 if ($result){
     while ($alumno = mysqli_fetch_assoc($result)){
         array_push($infoEstudiante, $alumno);
     }
-}
-///////////////////////////////
-$consultaCandidatos = 'SELECT documento, cargo, cursosgrados.curso, cursosgrados.grado ,nombre, imagen FROM candidatos, cursosgrados WHERE candidatos.cargo = "2" AND candidatos.grado_curso = cursosgrados.id';
-$res = mysqli_query($conexion, $consultaCandidatos);
-if ($res)
-{
-    $infoCandidatos = array();
-    while ($candidatos= mysqli_fetch_assoc($res))
+    if (count($infoEstudiante)!== 0)
     {
-        array_push($infoCandidatos, $candidatos);
+        //Existe el estudiante
+        $student = $infoEstudiante[0];
+        $grado = $student['grado'];
+        $jornada = $student['jornada'];
+        $sqlCandidatosPersoneria = "SELECT * FROM candidatos INNER JOIN cursosgrados ON cursosgrados.id = candidatos.grado_curso AND cursosgrados.grado = '11' 
+                                    WHERE candidatos.cargo = '2' ";
+        $sqlCandidatosRepresentante = "SELECT * FROM candidatos INNER JOIN cursosgrados ON cursosgrados.id = candidatos.grado_curso AND cursosgrados.grado = '$grado' 
+                                      WHERE candidatos.cargo = '1' AND candidatos.jornada = '$jornada'";
+        $rezultat = mysqli_query($conexion, $sqlCandidatosPersoneria);
+        $resultat = mysqli_query($conexion, $sqlCandidatosRepresentante);
+        $infoCandidatosPersoneria = array();
+        $infoCandidatosRepresentante = array();
+        if ($rezultat)
+        {
+            while ($candidatoPersoneria = mysqli_fetch_assoc($rezultat))
+            {
+                array_push($infoCandidatosPersoneria, $candidatoPersoneria);
+            }
+        }
+        if ($resultat)
+        {
+            while ($candidatoRepresentante = mysqli_fetch_assoc($resultat))
+            {
+                array_push($infoCandidatosRepresentante, $candidatoRepresentante);
+            }
+        }
+        //Datos de personeros
+        echo json_encode([
+            "data"=>[
+                "mensaje" => "ok",
+                "dataVotante" => $student,
+                "dataPersonero"=> $infoCandidatosPersoneria,
+                "dataRepresentante" => $infoCandidatosRepresentante]
+        ]);
     }
-}
-
-$registros = mysqli_num_rows($result);
-if ($registros == 0)
-{
-    $arrayVacio = array();
-    echo json_encode([
-        'data' => "vacio",
-    ], JSON_UNESCAPED_UNICODE);
-
-}
-else{
-    echo json_encode([
-        'data' => $infoEstudiante,
-        'dataCandidato' => $infoCandidatos
-
-    ], JSON_UNESCAPED_UNICODE);
+    else{
+        $consultaDocente="SELECT * FROM docentes WHERE documento = $id AND docentes.fechaNacimiento = '$fechaBorn'";
+        $dataResult = mysqli_query($conexion, $consultaDocente);
+        $infoDocente = array();
+        if ($dataResult)
+        {
+            while ($docente = mysqli_fetch_assoc($dataResult))
+            {
+                array_push($infoDocente, $docente);
+            }
+            if (count($infoDocente)!== 0)
+            {
+                //Existe el docente
+                $sqlCandidatoDocente = "SELECT * FROM candidatos WHERE cargo = '3'";
+                $ergebnis = mysqli_query($conexion, $sqlCandidatoDocente);
+                $infoCandidatosDocente = array();
+                if ($ergebnis)
+                {
+                    while ($candidatoDocente = mysqli_fetch_assoc($ergebnis))
+                    {
+                        array_push($infoCandidatosDocente, $candidatoDocente);
+                    }
+                }
+                echo json_encode([
+                    "data"=>[
+                        "mensaje" => "ok",
+                        "dataVotante" => $infoDocente,
+                        "dataCandidatos" => $infoCandidatosDocente
+                    ]
+                ]);
+            }
+            else
+            {
+                //No existe en la base de datos
+                echo json_encode([
+                'error' => "El numero digitado no existe en la base de datos",
+                ], JSON_UNESCAPED_UNICODE);
+            }
+        }
+    }
 }
