@@ -200,7 +200,7 @@ let app = new Vue({
                 if (data.estado === 'ok'){
                     if(app.editando){
                         //
-                        const index = app.candidate.indexOf(app.candidatoEnEdicion)
+                        const index = app.candidate.indexOf(app.candidatoEnEdicion);
                         app.candidate.splice(index, 1, app.candidato)
                     }
                     else{

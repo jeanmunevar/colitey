@@ -193,82 +193,76 @@
 </section>
 <!-- ##### About Us Area End ##### -->
 <section class="teachers-area section-padding-0-100">
-    <form action="" id="formularioVotacion" style="display: none; margin-top: 10%">
+    <form action="" id="formularioVotacion" class="formulario" style="display: none; margin-top: 10%">
     <div class="container">
         <div class="row">
-            <h4 STYLE="margin-top: 1%">Bienvenido {{votante.nombre}}</h4>
+            <h4 STYLE="margin-top: 1%" v-if="codigo == '101'">Bienvenido(a) {{votante.nombre}}</h4>
+            <h4 style="margin-top: 1%" v-else>Bienvenido(a) {{votante.nombre}}</h4>
             <div class="col-12">
                 <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                    <span>Escoja su candidato a personería</span>
-                    <h3>Grado 11</h3>
+                    <span v-if="codigo == '101'">Escoja su candidato a personería</span>
+                    <span v-else>Escoja su candidato a representante de maestros</span>
+                    <h3 v-if="codigo == '101'">Grado 11</h3>
+
                 </div>
             </div>
         </div>
-
-
-
-            <br>
-
+        <br>
         <div class="row">
-            <!-- Single Teachers -->
+            <!-- Personeros-->
+            <div v-if="candidatosPersoneria.length === 0">
 
-
-            <div class="col-12 col-sm-6 col-lg-3" v-for="datar in candidatosPersoneria">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 card" v-for="datar in candidatosPersoneria">
                 <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="400ms">
                     <!-- Thumbnail -->
                     <div class="teachers-thumbnail">
                         <img  v-bind:src="datar.imagen" alt="imagen Candidato" />
-                        <input type="radio" id="candidato1" name="subject" class="subject-list">
+
                     </div>
                     <!-- Meta Info -->
                     <div class="teachers-info mt-30">
                         <h5>{{datar.nombre}}</h5>
-                        <span>Estudiante {{datar.grado_curso}}</span>
+                        <span v-if="datar.nombre !== 'VOTO EN BLANCO'">Estudiante {{datar.grado}} {{datar.curso}}</span>
                     </div>
+
+                    <input type="radio" id="candidato" name="subject" class="subject-list">
                 </div>
             </div>
-            <!-- Single Teachers -->
-            <!--<div class="col-12 col-sm-6 col-lg-3">-->
-                <!--<div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="500ms">-->
-                    <!--&lt;!&ndash; Thumbnail &ndash;&gt;-->
-                    <!--<div class="teachers-thumbnail">-->
-                        <!--<img src="img/bg-img/tea2.jpg" alt=""><input type="radio" id="candidato2"  name="subject" class="subject-list">-->
-                    <!--</div>-->
-                    <!--&lt;!&ndash; Meta Info &ndash;&gt;-->
-                    <!--<div class="teachers-info mt-30">-->
-                        <!--<h5>Pedro Fuentes</h5>-->
-                        <!--<span>Estudiante grado 11 B</span>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--&lt;!&ndash; Single Teachers &ndash;&gt;-->
-            <!--<div class="col-12 col-sm-6 col-lg-3">-->
-                <!--<div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="600ms">-->
-                    <!--&lt;!&ndash; Thumbnail &ndash;&gt;-->
-                    <!--<div class="teachers-thumbnail">-->
-                        <!--<img src="img/bg-img/tea3.jpg" alt=""><input type="radio" id="candidato3" name="subject" class="subject-list">-->
-                    <!--</div>-->
-                    <!--&lt;!&ndash; Meta Info &ndash;&gt;-->
-                    <!--<div class="teachers-info mt-30">-->
-                        <!--<h5>James Lombana</h5>-->
-                        <!--<span>Estudiante grado 11 C</span>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--&lt;!&ndash; Single Teachers &ndash;&gt;-->
-            <!--<div class="col-12 col-sm-6 col-lg-3">-->
-                <!--<div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="700ms">-->
-                    <!--&lt;!&ndash; Thumbnail &ndash;&gt;-->
-                    <!--<div class="teachers-thumbnail">-->
-                        <!--<img src="img/bg-img/tea4.jpg" alt=""><input type="radio" id="candidato4" name="subject" class="subject-list">-->
-                    <!--</div>-->
-                    <!--&lt;!&ndash; Meta Info &ndash;&gt;-->
-                    <!--<div class="teachers-info mt-30">-->
-                        <!--<h5>Claudia Blanco</h5>-->
-                        <!--<span>Estudiante grado 11 D</span>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
+        </div>
+        </div>
+    </form>
+            <!--TODO Seguir con representantes mañana con iteraciones de vue-->
+
+    <form action="" id="formRepre" style="display: none; margin-top: 10%">
+    <div class="container">
+            <div class="col-12">
+                <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
+                    <span>Escoja su candidato a representante</span>
+                    <h3>Del grado: {{votante.grado}}</h3>
+                </div>
+            </div>
+            <div v-if="candidatosRepresentante.length === 0">
+
+            </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3 card" v-for="dat in candidatosRepresentante">
+                <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="400ms">
+                    <!-- Thumbnail -->
+                    <div class="teachers-thumbnail">
+                        <img  v-bind:src="dat.imagen" alt="imagen Candidato" />
+
+                    </div>
+                    <!-- Meta Info -->
+                    <div class="teachers-info mt-30">
+                        <h5>{{dat.nombre}}</h5>
+                        <div v-if="dat.nombre !== 'VOTO EN BLANCO'">Estudiante {{dat.grado}} {{dat.curso}}</div>
+                    </div>
+
+                    <input type="radio" id="" name="subject" class="subject-list">
+                </div>
+            </div>
+        </div>
         </div>
 
         <div class="row">
@@ -278,9 +272,56 @@
                 </div>
             </div>
         </div>
+        </form>
 
-    </div>
+    <form action="" id="formuProfes" class="formulario" style="display: none; margin-top: 10%">
+        <div class="container">
+            <div class="row">
+                <h4 STYLE="margin-top: 1%" v-if="codigo == '102'">Bienvenido(a) {{votante.nombre}}</h4>
+                <h4 style="margin-top: 1%" v-else>Bienvenido(a) {{votante.nombre}}</h4>
+                <div class="col-12">
+                    <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
+                        <span v-if="codigo == '101'">Escoja su candidato a personería</span>
+                        <span v-else>Escoja su candidato a representante de maestros</span>
+                        <h3 v-if="codigo == '101'">Grado 11</h3>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <!-- Personeros-->
+
+                <div class="col-12 col-sm-6 col-lg-3 card" v-for="dot in candidatosDocente">
+                    <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="400ms">
+                        <!-- Thumbnail -->
+                        <div class="teachers-thumbnail">
+                            <img  v-bind:src="dot.imagen" alt="imagen Candidato" />
+
+                        </div>
+                        <!-- Meta Info -->
+                        <div class="teachers-info mt-30">
+                            <h5>{{dot.nombre}}</h5>
+                            <span v-if="datar.nombre !== 'VOTO EN BLANCO'">DOCENTE</span>
+                        </div>
+
+                        <input type="radio" id="candidato" name="subject" class="subject-list">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="view-all text-center wow fadeInUp" data-wow-delay="800ms">
+                    <input type="submit" CLASS="btn btn-info col-md-6" value="VOTAR" >
+                </div>
+            </div>
+        </div>
     </form>
+
+
+
+
 </section>
 <!-- ##### Team Area Start ##### -->
 </div>
@@ -458,11 +499,8 @@
 <script src="js/active.js"></script>
 <script src="js/main.js"></script>
 <script>
-
 </script>
-<style>
 
-</style>
 </body>
 
 </html>

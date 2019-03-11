@@ -32,10 +32,8 @@ if ($result){
         $student = $infoEstudiante[0];
         $grado = $student['grado'];
         $jornada = $student['jornada'];
-        $sqlCandidatosPersoneria = "SELECT * FROM candidatos INNER JOIN cursosgrados ON cursosgrados.id = candidatos.grado_curso AND cursosgrados.grado = '11' 
-                                    WHERE candidatos.cargo = '2' ";
-        $sqlCandidatosRepresentante = "SELECT * FROM candidatos INNER JOIN cursosgrados ON cursosgrados.id = candidatos.grado_curso AND cursosgrados.grado = '$grado' 
-                                      WHERE candidatos.cargo = '1' AND candidatos.jornada = '$jornada'";
+        $sqlCandidatosPersoneria = "SELECT candidatos.documento, candidatos.nombre, candidatos.cargo, candidatos.grado_curso, cursosgrados.grado, cursosgrados.curso, cursosgrados.idJornada FROM candidatos INNER JOIN cursosgrados ON cursosgrados.id = candidatos.grado_curso AND cursosgrados.grado = '11' WHERE candidatos.cargo = '2'";
+        $sqlCandidatosRepresentante = "SELECT candidatos.documento, candidatos.nombre, candidatos.cargo, candidatos.grado_curso, cursosgrados.grado, cursosgrados.curso, cursosgrados.idJornada FROM candidatos INNER JOIN cursosgrados ON cursosgrados.id = candidatos.grado_curso AND cursosgrados.grado = '$grado' WHERE candidatos.cargo = '1' AND candidatos.jornada = '$jornada'";
         $rezultat = mysqli_query($conexion, $sqlCandidatosPersoneria);
         $resultat = mysqli_query($conexion, $sqlCandidatosRepresentante);
         $infoCandidatosPersoneria = array();
@@ -57,6 +55,7 @@ if ($result){
         //Datos de personeros
         echo json_encode([
             "data"=>[
+                "codigo" => "101",
                 "mensaje" => "ok",
                 "dataVotante" => $student,
                 "dataPersonero"=> $infoCandidatosPersoneria,
@@ -76,7 +75,7 @@ if ($result){
             if (count($infoDocente)!== 0)
             {
                 //Existe el docente
-                $sqlCandidatoDocente = "SELECT * FROM candidatos WHERE cargo = '3'";
+                $sqlCandidatoDocente = "SELECT documento, nombre, cargo, jornada FROM candidatos WHERE cargo = '3'";
                 $ergebnis = mysqli_query($conexion, $sqlCandidatoDocente);
                 $infoCandidatosDocente = array();
                 if ($ergebnis)
@@ -88,6 +87,7 @@ if ($result){
                 }
                 echo json_encode([
                     "data"=>[
+                        "codigo" => "102",
                         "mensaje" => "ok",
                         "dataVotante" => $infoDocente,
                         "dataCandidatos" => $infoCandidatosDocente
@@ -98,7 +98,8 @@ if ($result){
             {
                 //No existe en la base de datos
                 echo json_encode([
-                'error' => "El numero digitado no existe en la base de datos",
+                 'codigo' => '103',
+                'Mensaje' => "El numero digitado no existe en la base de datos",
                 ], JSON_UNESCAPED_UNICODE);
             }
         }
