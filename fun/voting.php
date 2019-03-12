@@ -32,8 +32,8 @@ if ($result){
         $student = $infoEstudiante[0];
         $grado = $student['grado'];
         $jornada = $student['jornada'];
-        $sqlCandidatosPersoneria = "SELECT candidatos.documento, candidatos.nombre, candidatos.cargo, candidatos.grado_curso, cursosgrados.grado, cursosgrados.curso, cursosgrados.idJornada FROM candidatos INNER JOIN cursosgrados ON cursosgrados.id = candidatos.grado_curso AND cursosgrados.grado = '11' WHERE candidatos.cargo = '2'";
-        $sqlCandidatosRepresentante = "SELECT candidatos.documento, candidatos.nombre, candidatos.cargo, candidatos.grado_curso, cursosgrados.grado, cursosgrados.curso, cursosgrados.idJornada FROM candidatos INNER JOIN cursosgrados ON cursosgrados.id = candidatos.grado_curso AND cursosgrados.grado = '$grado' WHERE candidatos.cargo = '1' AND candidatos.jornada = '$jornada'";
+        $sqlCandidatosPersoneria = "SELECT candidatos.documento, candidatos.nombre, candidatos.cargo, candidatos.grado_curso, cursosgrados.grado,candidatos.imagen ,cursosgrados.curso, cursosgrados.idJornada FROM candidatos INNER JOIN cursosgrados ON cursosgrados.id = candidatos.grado_curso AND cursosgrados.grado = '11' WHERE candidatos.cargo = '2'";
+        $sqlCandidatosRepresentante = "SELECT candidatos.documento, candidatos.nombre, candidatos.cargo, candidatos.grado_curso, candidatos.imagen,cursosgrados.grado, cursosgrados.curso, cursosgrados.idJornada FROM candidatos INNER JOIN cursosgrados ON cursosgrados.id = candidatos.grado_curso AND cursosgrados.grado = '$grado' WHERE candidatos.cargo = '1' AND candidatos.jornada = '$jornada'";
         $rezultat = mysqli_query($conexion, $sqlCandidatosPersoneria);
         $resultat = mysqli_query($conexion, $sqlCandidatosRepresentante);
         $infoCandidatosPersoneria = array();
@@ -55,11 +55,11 @@ if ($result){
         //Datos de personeros
         echo json_encode([
             "data"=>[
-                "codigo" => "101",
-                "mensaje" => "ok",
-                "dataVotante" => $student,
-                "dataPersonero"=> $infoCandidatosPersoneria,
-                "dataRepresentante" => $infoCandidatosRepresentante]
+                'codigo' => '101',
+                'mensaje' => 'ok',
+                'dataVotante' => $student,
+                'dataPersonero'=> $infoCandidatosPersoneria,
+                'dataRepresentante' => $infoCandidatosRepresentante]
         ]);
     }
     else{
@@ -75,7 +75,7 @@ if ($result){
             if (count($infoDocente)!== 0)
             {
                 //Existe el docente
-                $sqlCandidatoDocente = "SELECT documento, nombre, cargo, jornada FROM candidatos WHERE cargo = '3'";
+                $sqlCandidatoDocente = "SELECT documento, nombre, cargo, jornada, imagen FROM candidatos WHERE cargo = '3'";
                 $ergebnis = mysqli_query($conexion, $sqlCandidatoDocente);
                 $infoCandidatosDocente = array();
                 if ($ergebnis)
@@ -86,11 +86,11 @@ if ($result){
                     }
                 }
                 echo json_encode([
-                    "data"=>[
-                        "codigo" => "102",
-                        "mensaje" => "ok",
-                        "dataVotante" => $infoDocente,
-                        "dataCandidatos" => $infoCandidatosDocente
+                    'data'=>[
+                        'codigo' => '102',
+                        'mensaje' => 'ok',
+                        'dataVotante' => $infoDocente,
+                        'dataCandidatos' => $infoCandidatosDocente
                     ]
                 ]);
             }
