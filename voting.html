@@ -193,11 +193,13 @@
 </section>
 <!-- ##### About Us Area End ##### -->
 <section class="teachers-area section-padding-0-100">
-    <form action="" id="formularioVotacion" class="formulario" style="display: none; margin-top: 10%">
+    <form action="" id="formularioVotacion" class="formulario" style=" margin-top: 10%" v-if="candidatosPersoneria.length >0" v-on:submit.prevent="votaPersonero" >
     <div class="container">
         <div class="row">
             <h4 STYLE="margin-top: 1%" v-if="codigo == '101'">Bienvenido(a) {{votante.nombre}}</h4>
-            <h4 style="margin-top: 1%" v-else>Bienvenido(a) {{votante.nombre}}</h4>
+            <h4 style="margin-top: 1%;" v-else>Bienvenido(a) {{votante.nombre}}  </h4>
+
+            <h4 style="margin-top: 1%; width: 100%" >  Grado {{votante.grado}}</h4>
             <div class="col-12">
                 <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
                     <span v-if="codigo == '101'">Escoja su candidato a personería</span>
@@ -224,22 +226,30 @@
                     <div class="teachers-info mt-30">
                         <h5>{{datar.nombre}}</h5>
                         <span v-if="datar.nombre !== 'VOTO EN BLANCO'">Estudiante {{datar.grado}} {{datar.curso}}</span>
+                        <span><h4>{{datar.tarjeton}}</h4></span>
                     </div>
 
-                    <input type="radio" id="candidato" name="subject" class="subject-list">
+                    <input type="radio" id="candidato" v-model="votoPersonero" v-bind:value="datar.documento" name="subject" class="subject-list">
                 </div>
             </div>
         </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="view-all text-center wow fadeInUp" data-wow-delay="800ms">
+                    <input type="submit" CLASS="btn btn-info col-md-6" value="VOTAR" >
+                </div>
+            </div>
+        </div>
     </form>
             <!--TODO Seguir con representantes mañana con iteraciones de vue-->
 
-    <form action="" id="formRepre" style="display: none; margin-top: 10%">
+    <form action="" id="formRepre" style=" margin-top: 10%" v-if="candidatosRepresentante.length >0" v-on:submit.prevent="votaRepresentante" >
     <div class="container">
             <div class="col-12">
                 <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
-                    <span>Escoja su candidato a representante</span>
-                    <h3>Del grado: {{votante.grado}}</h3>
+                    <span v-if="candidatosRepresentante.length > 0">Escoja su candidato a representante</span>
+                    <h3 v-if="candidatosRepresentante.length > 0">Del grado: {{votante.grado}}</h3>
                 </div>
             </div>
             <div v-if="candidatosRepresentante.length === 0">
@@ -265,7 +275,7 @@
         </div>
         </div>
 
-        <div class="row">
+        <div class="row" v-if="candidatosRepresentante.length > 0">
             <div class="col-12">
                 <div class="view-all text-center wow fadeInUp" data-wow-delay="800ms">
                     <input type="submit" CLASS="btn btn-info col-md-6" value="VOTAR" >
@@ -274,7 +284,7 @@
         </div>
         </form>
 
-    <form action="" id="formuProfes" class="formulario" style="display: none; margin-top: 10%">
+    <form action="" id="formuProfes" class="formulario" style=" margin-top: 10%" v-if="candidatosDocente.length >0" v-on:submit.prevent="votaDocente">
         <div class="container">
             <div class="row">
                 <h4 STYLE="margin-top: 1%" v-if="codigo == '102'">Bienvenido(a) {{votante.nombre}}</h4>
@@ -305,6 +315,7 @@
                         <div class="teachers-info mt-30">
                             <h5>{{dot.nombre}}</h5>
                             <span v-if="datar.nombre !== 'VOTO EN BLANCO'">DOCENTE</span>
+                            <span><b></b></span>
                         </div>
 
                         <input type="radio" id="candidato" name="subject" class="subject-list">

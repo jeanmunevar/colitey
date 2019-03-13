@@ -13,7 +13,10 @@ let app = new Vue({
         candidatosRepresentante: "",
         candidatosDocente: '',
         datar: '',
-        codigo:''
+        codigo:'',
+        votoPersonero:'',
+        votoRepresentante:'',
+        votoDocente:''
 
     },
     methods: {
@@ -41,8 +44,8 @@ let app = new Vue({
                 switch (d.codigo) {
                     case '101':
                         app.codigo = d.codigo;
-                        document.getElementById('formularioVotacion').style.display = "";
-                        document.getElementById('formRepre').style.display ="";
+                        // document.getElementById('formularioVotacion').style.display = "";
+                        // document.getElementById('formRepre').style.display ="";
                         document.getElementById('ingreso').style.display = "none";
                         switch (d.dataVotante.grado) {
                             case '0':
@@ -261,7 +264,7 @@ let app = new Vue({
                     case '102':
 
                         app.codigo = d.codigo;
-                        document.getElementById('formuProfes').style.display = "";
+                        // document.getElementById('formuProfes').style.display = "";
                         document.getElementById('ingreso').style.display = "none";
                         d.dataVotante.forEach((el)=>{
                             console.log(el);
@@ -286,6 +289,69 @@ let app = new Vue({
                 console.log(error.message);
             })
 
+        },
+        votaPersonero(){
+
+
+            let candidato = this.votoPersonero;
+            let votante = this.votante.documento;
+
+            if(confirm('Esta seguro?')){
+                fetch('./fun/createVote.php?candidato='+candidato+'&votante='+votante+'&cargo=2')
+                    .then((response) => {
+                        return response.json()
+                    })
+                    .then((data) => {
+                        console.log(data.mensaje);
+
+                    })
+                    .catch((err) => {
+                        alert(err)
+                    })
+            }
+
+        },
+        votaRepresentante(){
+            var fecha = new Date();
+            var fechaVoto = fecha.getDate()+"/"+(fecha.getMonth()+1)+"/"+fecha.getFullYear();
+            let horaVoto = fecha.getHours()+":"+fecha.getMinutes();
+            let candidato = this.votoRepresentante;
+            let votante = this.votante.documento;
+
+            if(confirm('Esta seguro?')){
+                fetch('./fun/createVote.php?candidato='+candidato+'&votante='+votante+'&fecha='+fechaVoto+'&hora='+horaVoto+'&cargo=1')
+                    .then((response) => {
+                        return response.json()
+                    })
+                    .then((data) => {
+                        console.log(data.mensaje);
+
+                    })
+                    .catch((err) => {
+                        alert(err)
+                    })
+            }
+        },
+        votaDocente(){
+            var fecha = new Date();
+            var fechaVoto = fecha.getDate()+"/"+(fecha.getMonth()+1)+"/"+fecha.getFullYear();
+            let horaVoto = fecha.getHours()+":"+fecha.getMinutes();
+            let candidato = this.votoDocente;
+            let votante = this.votante.documento;
+
+            if(confirm('Esta seguro?')) {
+                fetch('./fun/createVote.php?candidato=' + candidato + '&votante=' + votante + '&fecha=' + fechaVoto + '&hora=' + horaVoto + '&cargo=3')
+                    .then((response) => {
+                        return response.json()
+                    })
+                    .then((data) => {
+                        console.log(data.mensaje);
+
+                    })
+                    .catch((err) => {
+                        alert(err)
+                    })
+            }
         }
     },
 

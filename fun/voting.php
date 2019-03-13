@@ -17,7 +17,7 @@ $fechaBorn = $documento['fechaNacimiento'];
 
 
 
-$consultaEstudiante = "SELECT * FROM estudiante INNER JOIN cursosgrados ON cursosgrados.id = estudiante.salon WHERE documento = '$id' AND estudiante.fechaNacimiento = '$fechaBorn'";
+$consultaEstudiante = "SELECT estudiante.documento, estudiante.primerNombre, estudiante.segundoNombre, estudiante.primerApellido, estudiante.segundoApellido, estudiante.salon, cursosgrados.grado, cursosgrados.curso, estudiante.jornada FROM estudiante INNER JOIN cursosgrados ON cursosgrados.id = estudiante.salon WHERE documento = '$id' AND estudiante.fechaNacimiento = '$fechaBorn'";
 //Se genera la consulta
 $result = mysqli_query($conexion, $consultaEstudiante);
 $infoEstudiante = array();
@@ -32,8 +32,8 @@ if ($result){
         $student = $infoEstudiante[0];
         $grado = $student['grado'];
         $jornada = $student['jornada'];
-        $sqlCandidatosPersoneria = "SELECT candidatos.documento, candidatos.nombre, candidatos.cargo, candidatos.grado_curso, cursosgrados.grado,candidatos.imagen ,cursosgrados.curso, cursosgrados.idJornada FROM candidatos INNER JOIN cursosgrados ON cursosgrados.id = candidatos.grado_curso AND cursosgrados.grado = '11' WHERE candidatos.cargo = '2'";
-        $sqlCandidatosRepresentante = "SELECT candidatos.documento, candidatos.nombre, candidatos.cargo, candidatos.grado_curso, candidatos.imagen,cursosgrados.grado, cursosgrados.curso, cursosgrados.idJornada FROM candidatos INNER JOIN cursosgrados ON cursosgrados.id = candidatos.grado_curso AND cursosgrados.grado = '$grado' WHERE candidatos.cargo = '1' AND candidatos.jornada = '$jornada'";
+        $sqlCandidatosPersoneria = "SELECT candidatos.documento, candidatos.nombre, candidatos.cargo, candidatos.grado_curso, cursosgrados.grado,candidatos.imagen ,cursosgrados.curso, cursosgrados.idJornada, candidatos.tarjeton FROM candidatos INNER JOIN cursosgrados ON cursosgrados.id = candidatos.grado_curso AND cursosgrados.grado = '11' WHERE candidatos.cargo = '2' ORDER BY candidatos.tarjeton ASC";
+        $sqlCandidatosRepresentante = "SELECT candidatos.documento, candidatos.nombre, candidatos.cargo, candidatos.grado_curso, candidatos.imagen,cursosgrados.grado, cursosgrados.curso, cursosgrados.idJornada, candidatos.tarjeton FROM candidatos INNER JOIN cursosgrados ON cursosgrados.id = candidatos.grado_curso AND cursosgrados.grado = '$grado' WHERE candidatos.cargo = '1' AND candidatos.jornada = '$jornada' ORDER BY candidatos.tarjeton ASC";
         $rezultat = mysqli_query($conexion, $sqlCandidatosPersoneria);
         $resultat = mysqli_query($conexion, $sqlCandidatosRepresentante);
         $infoCandidatosPersoneria = array();
@@ -75,7 +75,7 @@ if ($result){
             if (count($infoDocente)!== 0)
             {
                 //Existe el docente
-                $sqlCandidatoDocente = "SELECT documento, nombre, cargo, jornada, imagen FROM candidatos WHERE cargo = '3'";
+                $sqlCandidatoDocente = "SELECT documento, nombre, cargo, jornada, imagen, tarjeton FROM candidatos WHERE cargo = '3' ORDER BY candidatos.tarjeton ASC" ;
                 $ergebnis = mysqli_query($conexion, $sqlCandidatoDocente);
                 $infoCandidatosDocente = array();
                 if ($ergebnis)
