@@ -14,18 +14,18 @@ date_default_timezone_set('America/Bogota');
     $candidato = $_GET['candidato'];
     $cargo = $_GET['cargo'];
     $fecha = date("Y-m-d,h:m:s");
-    $consulta ="SELECT * FROM votos WHERE idEstudiante = '$votante' AND  cargo='$cargo'";
+    $consulta ="SELECT * FROM votos WHERE idVotante = '$votante' AND  cargo='$cargo'";
     $resultado= mysqli_query($conexion, $consulta);
     $total = mysqli_num_rows($resultado);
     if ($total===0)
     {
         //No existe el voto
 
-        $sqlVoto = "INSERT INTO votos(idvotos, fecha, idEstudiante, idCandidato, cargo) VALUES (DEFAULT,'$fecha','$votante','$candidato','$cargo') ";
+        $sqlVoto = "INSERT INTO votos(idvotos, fecha, idVotante, idCandidato, cargo) VALUES (DEFAULT,'$fecha','$votante','$candidato','$cargo') ";
         if(mysqli_query($conexion, $sqlVoto)){
             echo json_encode([
                 'estado' => 'ok',
-                'mensaje' => 'Candidato creado'
+                'mensaje' => 'Gracias por votar, se ha registrado su voto.'
             ]);
         }else{
             echo json_encode([
@@ -36,9 +36,10 @@ date_default_timezone_set('America/Bogota');
     }
     else{
         //Existe el voto
+
         echo json_encode([
             'codigo' => '101',
-            'Mensaje' => "Ya votó",
+            'mensaje' => "Ya existe un registro de su votación en nuestro sistema",
         ], JSON_UNESCAPED_UNICODE);
 
     }

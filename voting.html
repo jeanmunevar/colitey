@@ -318,7 +318,7 @@
                             <span><b></b></span>
                         </div>
 
-                        <input type="radio" id="candidato" name="subject" class="subject-list">
+                        <input type="radio" id="candidato" v-model="votoDocente" v-bind:value="dot.documento" name="subject" class="subject-list">
                     </div>
                 </div>
             </div>
@@ -326,7 +326,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="view-all text-center wow fadeInUp" data-wow-delay="800ms">
-                    <input type="submit" CLASS="btn btn-info col-md-6" value="VOTAR" >
+                    <input type="submit"  CLASS="btn btn-info col-md-6" value="VOTAR" >
                 </div>
             </div>
         </div>

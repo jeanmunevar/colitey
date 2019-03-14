@@ -302,7 +302,7 @@ let app = new Vue({
                         return response.json()
                     })
                     .then((data) => {
-                        console.log(data.mensaje);
+                        alert(data.mensaje);
 
                     })
                     .catch((err) => {
@@ -324,7 +324,7 @@ let app = new Vue({
                         return response.json()
                     })
                     .then((data) => {
-                        console.log(data.mensaje);
+                        alert(data.mensaje);
 
                     })
                     .catch((err) => {
@@ -345,11 +345,11 @@ let app = new Vue({
                         return response.json()
                     })
                     .then((data) => {
-                        console.log(data.mensaje);
+                        alert(data.mensaje);
 
                     })
                     .catch((err) => {
-                        alert(err)
+                        alert("Hubo un error."+" "+err);
                     })
             }
         }
