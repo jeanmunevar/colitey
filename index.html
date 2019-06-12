@@ -7,24 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!--<script src="./js/vue/vue.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 
     <!-- Title -->
     <title>Colegio ITEY</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/school-images/escudo.png">
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <!--El cdn de vue-->
+
 
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
-<body>
+<body >
     <!-- ##### Preloader ##### -->
+
     <div id="preloader">
         <i class="circle-preloader"></i>
     </div>
@@ -39,7 +41,7 @@
                     <div class="col-12 h-100">
                         <div class="header-content h-100 d-flex align-items-center justify-content-between">
                             <div class="academy-logo">
-                                <a href="index.html"><img src="img/school-images/logo1.png" width="20%" alt=""></a>
+                                <a href="./"><img src="img/school-images/logo1.png" width="80%" alt=""></a>
                             </div>
                             <div class="login-content">
                                 <!--<a href="#">Registrese</a> / <a href="#">Ingrese</a>-->
@@ -75,79 +77,40 @@
                             <div class="classynav">
                                 <ul>
                                     <img src="./img/icons/inicio.png" width="2%" class="iconos-ocultos" alt="">
-                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="./">Inicio</a></li>
                                     <img src="./img/icons/INSTITUCIONAL.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
-                                    <li><a href="index.html"> Institucional</a></li>
+                                    <li><a href="./institucional"> Institucional</a></li>
+                                    <img src="./img/icons/escuela.png" alt="" width="4%">
                                     <li><a href="#">Jornada escolar</a>
-                                        <!--<div class="megamenu">-->
-                                            <!--<ul class="single-mega cn-col-4">-->
-                                                <!--<li><a href="#">Home</a></li>-->
-                                                <!--<li><a href="#">Services &amp; Features</a></li>-->
-                                                <!--<li><a href="#">Accordions and tabs</a></li>-->
-                                                <!--<li><a href="#">Menu ideas</a></li>-->
-                                                <!--<li><a href="#">Students Gallery</a></li>-->
-                                            <!--</ul>-->
-                                            <!-- <ul class="single-mega cn-col-4">
-                                                <li><a href="#">Home</a></li>
-                                                <li><a href="#">Services &amp; Features</a></li>
-                                                <li><a href="#">Accordions and tabs</a></li>
-                                                <li><a href="#">Menu ideas</a></li>
-                                                <li><a href="#">Students Gallery</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="#">Home</a></li>
-                                                <li><a href="#">Services &amp; Features</a></li>
-                                                <li><a href="#">Accordions and tabs</a></li>
-                                                <li><a href="#">Menu ideas</a></li>
-                                                <li><a href="#">Students Gallery</a></li>
-                                            </ul> -->
-                                            <!--<div class="single-mega cn-col-4">-->
-                                                <!--<img src="img/bg-img/bg-1.jpg" alt="">-->
-                                            <!--</div>-->
-                                        <!--</div>-->
                                         <ul class="dropdown">
-                                            <li><a href="index.html">Primaria</a></li>
-                                            <li><a href="index.html">Secundaria</a></li>
-                                            <li><a href="index.html">Complementaria</a></li>
-                                            <li><a href="index.html">Media técnica</a></li>
-                                            <li><a href="index.html">Preescolar</a></li>
+                                            <li><a href="./jornada/">Primaria</a></li>
+                                            <li><a href="./jornada/">Secundaria</a></li>
+                                            <li><a href="./jornada/">Complementaria</a></li>
+                                            <li><a href="./jornada/">Media técnica</a></li>
+                                            <li><a href="./jornada/">Preescolar</a></li>
                                         </ul>
                                     </li>
-                            
-                                    <li><a href="index.html">Zona rápida</a>
+                                    <img src="./img/icons/hombre-corriendo.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                    <li><a href="#">Zona rápida</a>
 
                                         <ul class="dropdown">
-                                            <li><a href="voting.html">Votaciones</a></li>
-                                            <li><a href="./votingAdmin.html">Administrador</a></li>
+                                            <li><a href="./voting">Votaciones</a></li>
+                                            <li><a href="./votingAdmin">Administrador</a></li>
+                                            <li><a href="./results">Resultados</a></li>
+                                            <li><a href="./docentes">Docentes</a></li>
+                                            <li><a href="http://www.itey.califica.es/">Calificaciones</a></li>
+                                            <li><a href="./messages">Mensajes</a></li>
                                         </ul>
-
-
-
                                     </li>
 
-                                    <!-- <li><a href="#">Primaria</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="course.html">Course</a></li>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
-                                        </ul>
-                                    </li> -->
-                                    <!--<li><a href="course.html">Course</a></li>-->
-                                    <li><a href="index.html">Contactenos</a></li>
+                                    <img src="./img/icons/contacto.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                    <li><a href="./contactUs">Contactenos</a></li>
                                 </ul>
                             </div>
                             <!-- Nav End -->
                         </div>
 
-                        <!-- Calling Info -->
-                        <!--<div class="calling-info">-->
-                            <!--<div class="call-center">-->
-                                <!--<a href="tel:+654563325568889"><i class="icon-telephone-2"></i> <span>(+65) 456 332 5568 889</span></a>-->
-                            <!--</div>-->
-                        <!--</div>-->
+
                     </nav>
                 </div>
             </div>
@@ -156,38 +119,110 @@
     <!-- ##### Header Area End ##### -->
 
     <!-- ##### Hero Area Start ##### -->
-    <section class="hero-area">
-        <div class="hero-slides owl-carousel">
 
+
+
+    <section class="hero-area" >
+
+        <div class="hero-slides owl-carousel">
             <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img" style="background-image: url(img/school-images/students.jpg);">
+
+
+
+            <div class="single-hero-slide bg-img" style="background-image: url(img/school-images/burn.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
                             <div class="hero-slides-content">
-                                <h4 data-animation="fadeInUp" data-delay="100ms">Una institución educativa de calidad</h4>
-                                <h2 data-animation="fadeInUp" data-delay="400ms">Formando el futuro Casanareño</h2>
-                                <a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">Saber más</a>
+                                <h4 data-animation="fadeInUp" data-delay="100ms">Bienvenido a nuestra institución</h4>
+                                <h2 data-animation="fadeInUp" data-delay="400ms">Que forma estudiantes <br></h2>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="single-hero-slide bg-img" style="background-image: url(img/school-images/perso.jpg); ">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <h4 data-animation="fadeInUp" data-delay="100ms">BIENVENIDO AL  </h4>
+                                <h2 data-animation="fadeInUp" data-delay="400ms">INSTITUTO TECNICO EMPRESARIAL EL YOPAL <br></h2>
 
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img" style="background-image: url(img/school-images/building.jpg);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-hero-slide bg-img" style="background-image: url(img/school-images/burn1.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <h4 data-animation="fadeInUp" data-delay="100ms">La enseñanza que deja huella no es la que se hace de </h4>
+                                <h2 data-animation="fadeInUp" data-delay="400ms">cabeza a cabeza, sino de corazón a corazón" <br>Howard G. Hendricks</h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- prueba subiendo a new image -->
+            <div class="single-hero-slide bg-img" style="background-image: url(./img/school-images/slide.JPG);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <h4 data-animation="fadeInUp" data-delay="100ms">"En cuestiones de cultura y de saber,  </h4>
+                                <h2 data-animation="fadeInUp" data-delay="400ms">sólo se pierde lo que se guarda; sólo se gana lo <br>que se da"</h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       <div class="single-hero-slide bg-img" style="background-image: url(./img/school-images/tres.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <h4 data-animation="fadeInUp" data-delay="100ms">"Si quieres trabajadores creativos, n</h4>
+                                <h2 data-animation="fadeInUp" data-delay="400ms">dales tiempo suficiente para jugar" <br>John Cleese</h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-hero-slide bg-img" style="background-image: url(./img/school-images/uno.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
                             <div class="hero-slides-content">
                                 <h4 data-animation="fadeInUp" data-delay="100ms">Bienvenido a nuestra institución</h4>
                                 <h2 data-animation="fadeInUp" data-delay="400ms">Que forma estudiantes <br>y personas</h2>
-                                <a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">Saber más</a>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="single-hero-slide bg-img" style="background-image: url(./img/school-images/dos.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <h4 data-animation="fadeInUp" data-delay="100ms">Bienvenido a nuestra institución</h4>
+                                <h2 data-animation="fadeInUp" data-delay="400ms">Que forma estudiantes <br>y personas</h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+       
         </div>
     </section>
     <!-- ##### Hero Area End ##### -->
@@ -203,14 +238,18 @@
                             <div class="col-12 col-md-4">
                                 <a href="#" style="margin: 0;padding: 0">
                                     <div class="single-top-features d-flex align-items-center justify-content-center">
-                                        <i class="icon-megaphone"></i>
-                                        <h5>Avisos importantes</h5>
+
+                                            <i class="icon-megaphone"></i>
+                                        <a href="./messages" style="margin: 0; padding: 0">
+                                            <h5>Avisos importantes</h5>
+                                        </a>
+
                                     </div>
                                 </a>
                             </div>
                             <!-- Single Top Features -->
                             <div class="col-12 col-md-4">
-                                <a href="" style="margin: 0; padding: 0">
+                                <a href="./docentes" style="margin: 0; padding: 0">
                                     <div class="single-top-features d-flex align-items-center justify-content-center">
                                         <i class="icon-assistance"></i>
                                         <h5>Nuestros docentes</h5>
@@ -246,8 +285,10 @@
                             <i class="fa fa-newspaper-o"></i>
                         </div>
                         <div class="course-content">
+                            <a href="./noticias">
                             <h4>Noticias</h4>
                             <p>Enterate de los relevante de nuestra institución</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -258,47 +299,60 @@
                             <i class="fa fa-folder-open-o"></i>
                         </div>
                         <div class="course-content">
-                            <h4>Documentos institucionales</h4>
-                            <p>Ingresa para descargar </p>
+                            <a href="./documentos">
+                                <h4>Documentos institucionales</h4>
+                                <p>Ingresa para descargar </p>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <!-- Single Course Area -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="500ms">
-                        <div class="course-icon">
-                            <i class="fa fa-picture-o"></i>
-                        </div>
-                        <div class="course-content">
-                            <h4>Galería fotografica</h4>
-                            <p>Ingresa para ver nuestro contenido</p>
-                        </div>
+
+                            <div class="course-icon">
+                                <i class="fa fa-picture-o"></i>
+                            </div>
+                            <div class="course-content">
+                                <a href="./gallery">
+                                <h4>Galería fotografica</h4>
+                                <p>Ingresa para ver nuestro contenido</p>
+                                </a>
+                            </div>
+
+
                     </div>
                 </div>
                 <!-- Single Course Area -->
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="600ms">
-                        <div class="course-icon">
-                            <i class="fa fa-facebook"></i>
+
+                        <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="600ms">
+                            <div class="course-icon">
+                                <i class="fa fa-facebook"></i>
+                            </div>
+
+                            <div class="course-content">
+                                <a href="./redes">
+                                <h4>Redes sociales</h4>
+                                <p>Sigue nuestro contenido</p>
+                                </a>
+                            </div>
+
                         </div>
-                        <div class="course-content">
-                            <h4>Redes sociales</h4>
-                            <p>Sigue nuestro contenido</p>
-                        </div>
-                    </div>
+
                 </div>
                 <!-- Single Course Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="700ms">
-                        <div class="course-icon">
-                            <i class="fa fa-check-square-o"></i>
-                        </div>
-                        <div class="course-content">
-                            <h4>Matriculas</h4>
-                            <p>Informate sobre el proceso de matriculas</p>
-                        </div>
-                    </div>
-                </div>
+                <!--<div class="col-12 col-sm-6 col-lg-4">-->
+                    <!--<div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="700ms">-->
+                        <!--<div class="course-icon">-->
+                            <!--<i class="fa fa-check-square-o"></i>-->
+                        <!--</div>-->
+                        <!--<div class="course-content">-->
+                            <!--<h4>Matriculas</h4>-->
+                            <!--<p>Informate sobre el proceso de matriculas</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
                 <!-- Single Course Area -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="800ms">
@@ -306,8 +360,10 @@
                             <i class="icon-message"></i>
                         </div>
                         <div class="course-content">
-                            <h4>Envía tu mensaje</h4>
-                            <p>Haznos saber tus inquietudes.</p>
+                            <a href="./contactUs">
+                                <h4>Envía tu mensaje</h4>
+                                <p>Haznos saber tus inquietudes.</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -327,202 +383,38 @@
                     </div>
                 </div>
             </div>
+
+
+            <div id="app">
             <div class="row">
                 <!-- Single Testimonials Area -->
-                <div class="col-12 col-md-6">
+
+                <div class="col-12 col-md-6" v-for="articulo in articulos.slice(0,4)">  <!-- agregando a -->
                     <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="400ms">
                         <div class="testimonial-thumb">
-                            <img src="img/bg-img/t1.jpg" alt="">
+                            <img v-bind:src="'./img/mediaArticles/1/'+articulo.imagen" alt="" >
                         </div>
                         <div class="testimonial-content">
-                            <h5>Mejor ICFES 2018</h5>
-                            <p>A través de las clases y dedicación de este estudiante, el ITEY logró figurar en los primeros lugares de las pruebas de estado</p>
-                            <h6><span>Juanito Fulano,</span> Estudiante 11 C</h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Testimonials Area -->
-                <div class="col-12 col-md-6">
-                    <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="500ms">
-                        <div class="testimonial-thumb">
-                            <img src="img/bg-img/t2.jpg" alt="">
-                        </div>
-                        <div class="testimonial-content">
-                            <h5>Primer lugar pruebas SUPERATE</h5>
-                            <p>A través de las clases y dedicación de estA estudiante, el ITEY logró figurar en los primeros lugares de las pruebas SUPERATE.</p>
-                            <h6><span>Juanita Fulana,</span> Estudiante 9 A</h6>
-                        </div>
-                    </div>
-                </div>
+                            <h5>{{articulo.titulo}}</h5>
+                            <p>{{articulo.prefacio}}</p>
 
-                <div class="col-12 col-md-6">
-                    <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="600ms">
-                        <div class="testimonial-thumb">
-                            <img src="img/bg-img/t3.jpg" alt="">
-                        </div>
-                        <div class="testimonial-content">
-                            <h5>Campeon de taekwondo</h5>
-                            <p>Nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul.</p>
-                            <h6><span>Juliana Barrera</span> Estudiante 8 D</h6>
                         </div>
                     </div>
                 </div>
                 <!-- Single Testimonials Area -->
-                <div class="col-12 col-md-6">
-                    <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="700ms">
-                        <div class="testimonial-thumb">
-                            <img src="img/bg-img/t4.jpg" alt="">
-                        </div>
-                        <div class="testimonial-content">
-                            <h5>Violín de oro</h5>
-                            <p>Vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibu lum est mat tis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul. Etiam nec odio vestibulum est mat tis effic iturut magnaNec odio vestibulum est mattis effic iturut magna.</p>
-                            <h6><span>Alejandra Leguizamon</span> Estudiante 11 A</h6>
-                        </div>
-                    </div>
-                </div>
+
+            </div>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="load-more-btn text-center wow fadeInUp" id="prueba" data-wow-delay="800ms">
-                        <a href="#" class="btn academy-btn">Ver más</a>
+                        <a href="./preeminent" class="btn academy-btn">Ver más</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ##### Testimonials Area End ##### -->
 
-    <!-- ##### Top Popular Courses Area Start ##### -->
-    <!--<div class="top-popular-courses-area section-padding-100-70">-->
-        <!--<div class="container">-->
-            <!--<div class="row">-->
-                <!--<div class="col-12">-->
-                    <!--<div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">-->
-                        <!--<span>The Best</span>-->
-                        <!--<h3>Top Popular Courses</h3>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row">-->
-               <!---->
-                <!--&lt;!&ndash; Single Top Popular Course &ndash;&gt;-->
-                <!--<div class="col-12 col-lg-6">-->
-                    <!--<div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="400ms">-->
-                        <!--<div class="popular-course-content">-->
-                            <!--<h5>Business for begginers</h5>-->
-                            <!--<span>By Simon Smith   |  March 18, 2018</span>-->
-                            <!--<div class="course-ratings">-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star-o" aria-hidden="true"></i>-->
-                            <!--</div>-->
-                            <!--<p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod.</p>-->
-                            <!--<a href="#" class="btn academy-btn btn-sm">See More</a>-->
-                        <!--</div>-->
-                        <!--<div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/pc-1.jpg);"></div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!---->
-                <!--&lt;!&ndash; Single Top Popular Course &ndash;&gt;-->
-                <!--<div class="col-12 col-lg-6">-->
-                    <!--<div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="500ms">-->
-                        <!--<div class="popular-course-content">-->
-                            <!--<h5>Advanced HTML5</h5>-->
-                            <!--<span>By Simon Smith   |  March 18, 2018</span>-->
-                            <!--<div class="course-ratings">-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star-o" aria-hidden="true"></i>-->
-                            <!--</div>-->
-                            <!--<p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod.</p>-->
-                            <!--<a href="#" class="btn academy-btn btn-sm">See More</a>-->
-                        <!--</div>-->
-                        <!--<div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/pc-2.jpg);"></div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!---->
-                <!--&lt;!&ndash; Single Top Popular Course &ndash;&gt;-->
-                <!--<div class="col-12 col-lg-6">-->
-                    <!--<div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="600ms">-->
-                        <!--<div class="popular-course-content">-->
-                            <!--<h5>Marketing 101</h5>-->
-                            <!--<span>By Simon Smith   |  March 18, 2018</span>-->
-                            <!--<div class="course-ratings">-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star-o" aria-hidden="true"></i>-->
-                            <!--</div>-->
-                            <!--<p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod.</p>-->
-                            <!--<a href="#" class="btn academy-btn btn-sm">See More</a>-->
-                        <!--</div>-->
-                        <!--<div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/pc-3.jpg);"></div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!---->
-                <!--&lt;!&ndash; Single Top Popular Course &ndash;&gt;-->
-                <!--<div class="col-12 col-lg-6">-->
-                    <!--<div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="700ms">-->
-                        <!--<div class="popular-course-content">-->
-                            <!--<h5>Business for begginers</h5>-->
-                            <!--<span>By Simon Smith   |  March 18, 2018</span>-->
-                            <!--<div class="course-ratings">-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star" aria-hidden="true"></i>-->
-                                <!--<i class="fa fa-star-o" aria-hidden="true"></i>-->
-                            <!--</div>-->
-                            <!--<p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod.</p>-->
-                            <!--<a href="#" class="btn academy-btn btn-sm">See More</a>-->
-                        <!--</div>-->
-                        <!--<div class="popular-course-thumb bg-img" style="background-image: url(img/bg-img/pc-4.jpg);"></div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!-- ##### Top Popular Courses Area End ##### -->
-
-    <!-- ##### Partner Area Start ##### -->
-    <!--<div class="partner-area section-padding-0-100">-->
-        <!--<div class="container">-->
-            <!--<div class="row">-->
-                <!--<div class="col-12">-->
-                    <!--<div class="partners-logo d-flex align-items-center justify-content-between flex-wrap">-->
-                        <!--<a href="#"><img src="img/clients-img/partner-1.png" alt=""></a>-->
-                        <!--<a href="#"><img src="img/clients-img/partner-2.png" alt=""></a>-->
-                        <!--<a href="#"><img src="img/clients-img/partner-3.png" alt=""></a>-->
-                        <!--<a href="#"><img src="img/clients-img/partner-4.png" alt=""></a>-->
-                        <!--<a href="#"><img src="img/clients-img/partner-5.png" alt=""></a>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!-- ##### Partner Area End ##### -->
-
-    <!-- ##### CTA Area Start ##### -->
-    <!--<div class="call-to-action-area">-->
-        <!--<div class="container">-->
-            <!--<div class="row">-->
-                <!--<div class="col-12">-->
-                    <!--<div class="cta-content d-flex align-items-center justify-content-between flex-wrap">-->
-                        <!--<h3>Do you want to enrole at our Academy? Get in touch!</h3>-->
-                        <!--<a href="#" class="btn academy-btn">See More</a>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!-- ##### CTA Area End ##### -->
-
-    <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <div class="main-footer-area section-padding-100-0">
             <div class="container">
@@ -533,7 +425,7 @@
                             <div class="widget-title">
                                 <a href=""><h3 STYLE="color: white;">Colegio ITEY</h3></a>
                             </div>
-                            <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod erat. Ut at erat et arcu pulvinar cursus a eget.</p>
+                            <p>Siento alegria cada vez que llego a mi Colegio, aqui aprendo a ser mejor persona al lado de muchos amigos que se que me van a durar para toda la vida - Maria Alejandra Munevar.</p>
                             <div class="footer-social-info">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -613,6 +505,10 @@
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <script src="./fun/showArticles/show.js"></script>
+    <script src="./fun/showArticles/show2.js"></script>
+
+
 </body>
 
 </html>

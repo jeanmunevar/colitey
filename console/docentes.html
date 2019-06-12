@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Docentes</title>
+
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main_console.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.css">-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <link rel="icon" href="../img/school-images/escudo.png">
+    <link href="./../css/font-awesome.min.css" rel="stylesheet">
+
+    <!--Vue switch, uso esta cdn para poder usar la directiva de vue de switch case-->
+
+    <!-- Core Stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+<header role="banner">
+
+    <h1><a href=".."><img src="../img/school-images/logo1.png" alt="logo itey" width="35%" style="margin-right: 2%"></a>Panel de administración</h1>
+    <ul class="utilities">
+        <br>
+        <li class="users"><a href="#">Cuenta</a></li>
+        <li class="logout warn"><a href="">Salir</a></li>
+    </ul>
+</header>
+
+<nav role='navigation'>
+    <ul class="main">
+        <li class="dashboard"><a href="./">Inicio</a></li>
+        <li class="edit"><a href="./news">Noticias</a></li>
+        <li class="write"><a href="./docentes">Docentes</a></li>
+        <li class="edit"><a href="./files">Documentos Institucionales</a></li>
+        <li class="comments"><a href="#">Mensajes</a></li>
+        <li class="users"><a href="#">Usuarios</a></li>
+    </ul>
+</nav>
+
+<main role="main">
+
+    <section class="panel important" id="app">
+        <!--Formulario para envío-->
+        <h2>Gestor de documentos institucionales</h2>
+        <br><br>
+        <form action="" v-on:submit.prevent="crear">
+            <div class="form-group">
+                <label for="">Numero de cedula del docente</label>
+                <input type="number" class="form-control" v-model="docente.documento">
+            </div>
+            <div class="form-group">
+                <label for="">Nombre del docente</label>
+                <input type="text" class="form-control" v-model="docente.nombre">
+            </div>
+            <div class="form-group">
+                <label for="">Ingrese fecha de nacimiento del docente</label>
+                <input type="date" class="form-control" v-model="docente.fechaNacimiento">
+            </div>
+            <div class="form-group">
+                <label for="">Rol del docente</label>
+                <select name="" id="" class="form-control" v-model="docente.idrol">
+                    <option disabled value="">Selecccione uno</option>
+                    <option value="0">Docente de preescolar</option>
+                    <option value="1">Docente de primaria</option>
+                    <option value="2">Coordinador</option>
+                    <option value="3">Docente de secundaria</option>
+                    <option value="4">Docente de especialidad</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">Describa el perfil del docente</label>
+                <textarea name=""  v-model="docente.perfil" cols="30" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="">Ingrese el email del docente</label>
+                <input type="email" class="form-control" v-model="docente.email">
+            </div>
+            <div class="form-group">
+                <label for="">Adjunte la foto del docente</label>
+
+                <input type="file" accept="image/png" class="form-control" id="foto" ref="img">
+            </div>
+            <img  alt="imagen docente">
+
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-info" value="Enviar">
+            </div>
+        </form>
+        <!--Acaba formulario de envio-->
+
+        <div class="bradcumbContent" style="text-align: center">
+            <h2>Listado de docentes</h2>
+        </div>
+
+        <table class="table-responsive table-bordered" id="articulos">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Documento</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Fecha de nacimiento</th>
+                <th scope="col">Rol</th>
+                <th scope="col">Perfil</th>
+                <th scope="col">Email</th>
+                <th scope="col">Fotografia</th>
+                <th scope="col">Opciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="docente in docentes">
+                <td>{{docente.iddocente}}</td>
+                <td>{{docente.documento}}</td>
+                <td>{{docente.nombre}}</td>
+                <td>{{docente.fechaNacimiento}}</td>
+                <td>{{docente.rol}}</td>
+                <td>{{docente.perfil}}</td>
+                <td>{{docente.email}}</td>
+                <td><img class="img-fluid" :src="'./../img/docentes/'+docente.foto"  alt="imagen no cargada"></td>
+
+                <td>
+                    <button @click="eliminar(docente)" class="btn btn-danger" type="button">Eliminar</button>
+                    <button @click="editar(docente)" class="btn btn-info" type="button">Editar</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+
+</main>
+</body>
+<script src="./../fun/docentes/subir_listar.js"></script>
+
+</html>

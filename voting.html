@@ -38,7 +38,7 @@
                 <div class="col-12 h-100">
                     <div class="header-content h-100 d-flex align-items-center justify-content-between">
                         <div class="academy-logo">
-                            <a href="index.html"><img src="img/school-images/logo1.png" width="20%" alt=""></a>
+                            <a href="./"><img src="img/school-images/logo1.png" width="80%" alt=""></a>
                         </div>
                         <div class="login-content">
 
@@ -74,9 +74,9 @@
                         <div class="classynav">
                             <ul>
                                 <img src="./img/icons/inicio.png" width="2%" class="iconos-ocultos" alt="">
-                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="./">Inicio</a></li>
                                 <img src="./img/icons/INSTITUCIONAL.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
-                                <li><a href="index.html"> Institucional</a></li>
+                                <li><a href="./"> Institucional</a></li>
                                 <li><a href="#">Jornada escolar</a>
                                     <!--<div class="megamenu">-->
                                     <!--<ul class="single-mega cn-col-4">-->
@@ -105,35 +105,26 @@
                                     <!--</div>-->
                                     <!--</div>-->
                                     <ul class="dropdown">
-                                        <li><a href="index.html">Primaria</a></li>
-                                        <li><a href="about-us.html">Secundaria</a></li>
-                                        <li><a href="course.html">Complementaria</a></li>
-                                        <li><a href="blog.html">Media técnica</a></li>
-                                        <li><a href="contact.html">Preescolar</a></li>
+                                        <li><a href="./underConstruction">Primaria</a></li>
+                                        <li><a href="./underConstruction">Secundaria</a></li>
+                                        <li><a href="./underConstruction">Complementaria</a></li>
+                                        <li><a href="./underConstruction">Media técnica</a></li>
+                                        <li><a href="./">Preescolar</a></li>
                                     </ul>
                                 </li>
 
-                                <li><a href="about-us.html">Zona rápida</a>
+                                <li><a href="#">Zona rápida</a>
 
                                     <ul class="dropdown">
-                                        <li><a href="./voting.html">Votaciones</a></li>
-                                        <li><a href="./votingAdmin.html">Administrador</a></li>
+                                        <li><a href="./voting">Votaciones</a></li>
+                                        <li><a href="./votingAdmin">Administrador</a></li>
+                                        <li><a href="./results">Resultados</a></li>
                                     </ul>
 
                                 </li>
 
-                                <!-- <li><a href="#">Primaria</a>
-                                    <ul class="dropdown">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="course.html">Course</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="elements.html">Elements</a></li>
-                                    </ul>
-                                </li> -->
-                                <!--<li><a href="course.html">Course</a></li>-->
-                                <li><a href="contact.html">Contactenos</a></li>
+
+                                <li><a href="redes">Contactenos</a></li>
                             </ul>
                         </div>
                         <!-- Nav End -->
@@ -269,7 +260,7 @@
                         <div v-if="dat.nombre !== 'VOTO EN BLANCO'">Estudiante {{dat.grado}} {{dat.curso}}</div>
                     </div>
 
-                    <input type="radio" id="" name="subject" class="subject-list">
+                    <input type="radio" v-model="votoRepresentante" v-bind:value="dat.documento" id="" name="subject" class="subject-list">
                 </div>
             </div>
         </div>
@@ -332,10 +323,12 @@
         </div>
     </form>
 
+    <input type="button" style="margin-left: 15%;margin-right: 15%; margin-top: 5%; display: none" id="reload" onclick="location.reload()" class="formulario col-md-9 btn btn-info" value="REGRESAR" >
 
 
 
 </section>
+
 <!-- ##### Team Area Start ##### -->
 </div>
 <!--<section class="teachers-area section-padding-0-100">-->
@@ -430,7 +423,7 @@
                         <div class="widget-title">
                             <a href=""><h3 STYLE="color: white;">Colegio ITEY</h3></a>
                         </div>
-                        <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod erat. Ut at erat et arcu pulvinar cursus a eget.</p>
+                        <p>No existe una mejor forma de hacer gente pobre que brindarle una pobre Educacion RAMH</p>
                         <div class="footer-social-info">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>

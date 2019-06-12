@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main_console.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.css">-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <link rel="icon" href="../img/school-images/escudo.png">
+    <link href="./../css/font-awesome.min.css" rel="stylesheet">
+
+    <!--Vue switch, uso esta cdn para poder usar la directiva de vue de switch case-->
+    <script src="https://unpkg.com/v-switch-case@1.0.2/dist/v-switch.min.js"></script>
+    <!-- Core Stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script>
+        Vue.use(VSwitch)
+    </script>
+</head>
+
+<body>
+<header role="banner">
+
+    <h1><a href=".."><img src="../img/school-images/logo1.png" alt="logo itey" width="35%" style="margin-right: 2%"></a>Panel de administración</h1>
+    <ul class="utilities">
+        <br>
+        <li class="users"><a href="#">Cuenta</a></li>
+        <li class="logout warn"><a href="">Salir</a></li>
+    </ul>
+</header>
+
+<nav role='navigation'>
+    <ul class="main">
+        <li class="dashboard"><a href="./">Inicio</a></li>
+        <li class="edit"><a href="./news">Noticias</a></li>
+        <li class="write"><a href="./docentes">Docentes</a></li>
+        <li class="edit"><a href="./files">Documentos institucionales</a></li>
+        <li class="comments"><a href="#">Mensajes</a></li>
+        <li class="users"><a href="#">Usuarios</a></li>
+    </ul>
+</nav>
+
+<main role="main">
+
+    <section class="panel important" id="app">
+        <h2>Gestor de contenidos</h2>
+        <br>
+
+        <div>
+            <form id="articles" v-on:submit.prevent="crear">
+                <div class="form-group">
+                    <label for="">Categoria articulo</label>
+                    <select name="" class="form-control" id="categoriaArt" v-model="articulo.idcategoria">
+                        <option value="1">Destacados</option>
+                        <option value="2">Noticias</option>
+                        <option value="3">Galería</option>
+                        <option value="4">Mensaje</option>
+                        <option value="5">Preescolar</option>
+                        <option value="6">Primaria</option>
+                        <option value="7">Secundaria</option>
+                        <option value="8">Especialidad</option>
+                        <option value="9">Jornada Complementaria</option>
+                    </select>
+                </div>
+                <!--Switch para mostrar contenido-->
+
+                <div v-switch="articulo.idcategoria">
+                    <div v-case="'1'">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Titulo</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese un titulo" v-model="articulo.titulo">
+                            <small id="emailHelp" class="form-text text-muted">Escoja un titulo llamativo</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Ingrese la nota introductoria del articulo</label>
+                            <textarea class="form-control" name="" id="nota" cols="30" rows="5" v-model="articulo.prefacio"></textarea>
+                        </div>
+                    </div>
+                    <!--Caso 2-->
+                    <div v-case="'2'">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Titulo</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese un titulo" v-model="articulo.titulo">
+                            <small id="emailHelp" class="form-text text-muted">Escoja un titulo llamativo</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Ingrese la nota introductoria del articulo</label>
+                            <textarea class="form-control" name="" id="nota" cols="30" rows="5" v-model="articulo.prefacio"></textarea>
+                        </div>
+                        <div  class="form-group">
+                            <label for="exampleInputPassword1">Ingrese el cuerpo o prefacio</label>
+                            <textarea class="form-control" name="" id="prefacio" cols="30" rows="10" v-model="articulo.nota"></textarea>
+                        </div>
+
+                    </div>
+                    <!--Caso 3-->
+                    <div v-case="'3'">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Titulo</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese un titulo" v-model="articulo.titulo">
+                            <small id="emailHelp" class="form-text text-muted">Escoja un titulo llamativo</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Ingrese la nota introductoria del articulo</label>
+                            <textarea class="form-control" name="" id="nota" cols="30" rows="5" v-model="articulo.prefacio"></textarea>
+                        </div>
+
+                    </div>
+                    <!--Caso 4-->
+                    <div v-case ="'4'">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Titulo</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese un titulo" v-model="articulo.titulo">
+                            <small id="emailHelp" class="form-text text-muted">Escoja un titulo llamativo</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Ingrese la nota </label>
+                            <textarea class="form-control" name="" id="nota" cols="30" rows="5" v-model="articulo.prefacio"></textarea>
+                        </div>
+                    </div>
+                    <!--Caso 5-->
+                    <div v-case="'5'">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Titulo</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese un titulo" v-model="articulo.titulo">
+                            <small id="emailHelp" class="form-text text-muted">Escoja un titulo llamativo</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Ingrese la nota introductoria del articulo</label>
+                            <textarea class="form-control" name="" id="nota" cols="30" rows="5" v-model="articulo.prefacio"></textarea>
+                        </div>
+                        <div  class="form-group">
+                            <label for="exampleInputPassword1">Ingrese el cuerpo </label>
+                            <textarea class="form-control" name="" id="prefacio" cols="30" rows="10" v-model="articulo.nota"></textarea>
+                        </div>
+
+                    </div>
+                    <!--Caso 6-->
+                    <div v-case="'6'">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Titulo</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese un titulo" v-model="articulo.titulo">
+                            <small id="emailHelp" class="form-text text-muted">Escoja un titulo llamativo</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Ingrese la nota introductoria del articulo</label>
+                            <textarea class="form-control" name="" id="nota" cols="30" rows="5" v-model="articulo.prefacio"></textarea>
+                        </div>
+                        <div  class="form-group">
+                            <label for="exampleInputPassword1">Ingrese el cuerpo </label>
+                            <textarea class="form-control" name="" id="prefacio" cols="30" rows="10" v-model="articulo.nota"></textarea>
+                        </div>
+
+                    </div>
+                    <!--Caso 7-->
+                    <div v-case="'7'">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Titulo</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese un titulo" v-model="articulo.titulo">
+                            <small id="emailHelp" class="form-text text-muted">Escoja un titulo llamativo</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Ingrese la nota introductoria del articulo</label>
+                            <textarea class="form-control" name="" id="nota" cols="30" rows="5" v-model="articulo.prefacio"></textarea>
+                        </div>
+                        <div  class="form-group">
+                            <label for="exampleInputPassword1">Ingrese el cuerpo o prefacio</label>
+                            <textarea class="form-control" name="" id="prefacio" cols="30" rows="10" v-model="articulo.nota"></textarea>
+                        </div>
+                    </div>
+                    <!--Caso 8-->
+                    <div v-case="'8'">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Titulo</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese un titulo" v-model="articulo.titulo">
+                            <small id="emailHelp" class="form-text text-muted">Escoja un titulo llamativo</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Ingrese la nota introductoria del articulo</label>
+                            <textarea class="form-control" name="" id="nota" cols="30" rows="5" v-model="articulo.prefacio"></textarea>
+                        </div>
+                        <div  class="form-group">
+                            <label for="exampleInputPassword1">Ingrese el cuerpo </label>
+                            <textarea class="form-control" name="" id="prefacio" cols="30" rows="10" v-model="articulo.nota"></textarea>
+                        </div>
+                    </div>
+                    <!--Caso 9-->
+                    <div v-case="'9'">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Titulo</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese un titulo" v-model="articulo.titulo">
+                            <small id="emailHelp" class="form-text text-muted">Escoja un titulo llamativo</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Ingrese la nota introductoria del articulo</label>
+                            <textarea class="form-control" name="" id="nota" cols="30" rows="5" v-model="articulo.prefacio"></textarea>
+                        </div>
+                        <div  class="form-group">
+                            <label for="exampleInputPassword1">Ingrese el cuerpo </label>
+                            <textarea class="form-control" name="" id="prefacio" cols="30" rows="10" v-model="articulo.nota"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Fin de switch para mostrar contenido-->
+                <div class="form-group" v-if="articulo.idcategoria !== '4'">
+                    <label for="" >Ingrese la imagen del articulo</label>
+                    <input type="file" accept="image/png"  ref="img" class="form-control"  id="imagen" @change="verImagen">
+                </div>
+                <div class="form-group">
+                    <img :src="prevImage" class="img-fluid" alt="">
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <br><br>
+            <div class="bradcumbContent" style="text-align: center">
+                <h2>Listado de articulos</h2>
+            </div>
+
+            <table class="table-responsive table-bordered" id="articulos">
+                <thead>
+                <tr>
+                    <th scope="col"># Publicación</th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Prefacio</th>
+                    <th scope="col">Imagen</th>
+
+                    <th scope="col">Categoría</th>
+                    <th scope="col">Opciones</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="articulo in articulos">
+                    <td width="5%">{{articulo.idpublicacion}}</td>
+                    <td>{{articulo.titulo}}</td>
+                    <td>{{articulo.prefacio}}</td>
+                    <td width="20%"><img  class="img-fluid" v-bind:src="'./../img/mediaArticles/'+articulo.idcategoria+'/'+articulo.imagen"></td>
+                    <td v-if="articulo.idcategoria === '1'">
+                        Destacados
+                    </td>
+                    <td v-if="articulo.idcategoria === '2'">
+                        Noticias
+
+                    </td>
+                    <td v-if="articulo.idcategoria === '3'">
+                        Galeria
+                    </td>
+                    <td v-if="articulo.idcategoria === '4'">
+                        Mensaje
+                    </td>
+                    <td v-if="articulo.idcategoria === '5'">
+                        Preescolar
+                    </td>
+                    <td v-if="articulo.idcategoria === '6'">
+                        Primaria
+                    </td>
+                    <td v-if="articulo.idcategoria === '7'">
+                        Secundaria
+                    </td>
+                    <td v-if="articulo.idcategoria === '8'">
+                        Especialidad
+                    </td>
+                    <td v-if="articulo.idcategoria === '9'">
+                        Complementaria
+                    </td>
+                    <td>
+                        <button @click="editar(articulo)" class="btn btn-info" type="button">Editar</button>
+                        <button @click="eliminar(articulo)" class="btn btn-danger" type="button">Eliminar</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+
+</main>
+</body>
+<script src="./../fun/uploadArticles/article.js">
+
+</script>
+
+</html>

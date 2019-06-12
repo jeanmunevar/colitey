@@ -20,8 +20,8 @@ let app = new Vue({
 
     },
     methods: {
-        query(){
-            let datos = new FormData();
+       query(){
+            /*let datos = new FormData();
 
             datos.append('documento', this.votante.documento);
             datos.append('fechaNacimiento', this.votante.fechaNacimiento);
@@ -47,6 +47,7 @@ let app = new Vue({
                         // document.getElementById('formularioVotacion').style.display = "";
                         // document.getElementById('formRepre').style.display ="";
                         document.getElementById('ingreso').style.display = "none";
+                        document.getElementById('reload').style.display = "";
                         switch (d.dataVotante.grado) {
                             case '0':
                                 d.dataVotante.grado = "Transición";
@@ -266,6 +267,7 @@ let app = new Vue({
                         app.codigo = d.codigo;
                         // document.getElementById('formuProfes').style.display = "";
                         document.getElementById('ingreso').style.display = "none";
+                        document.getElementById('reload').style.display = "";
                         d.dataVotante.forEach((el)=>{
                             console.log(el);
                             app.votante = el;
@@ -278,6 +280,9 @@ let app = new Vue({
                     case '103':
                         alert("Verifique sus credenciales");
                         break;
+                    case undefined:
+                        alert("Verifique sus credenciales");
+                        break;
                     default:
                         alert("Verifique sus credenciales");
                         break;
@@ -287,8 +292,8 @@ let app = new Vue({
 
             }).catch((error)=>{
                 console.log(error.message);
-            })
-
+            })*/
+        alert("Las votaciones cerraron!, gracias!");
         },
         votaPersonero(){
 
@@ -297,7 +302,7 @@ let app = new Vue({
             let votante = this.votante.documento;
 
             if(confirm('Esta seguro?')){
-                fetch('./fun/createVote.php?candidato='+candidato+'&votante='+votante+'&cargo=2')
+                /*fetch('./fun/createVote.php?candidato='+candidato+'&votante='+votante+'&cargo=2')
                     .then((response) => {
                         return response.json()
                     })
@@ -307,7 +312,7 @@ let app = new Vue({
                     })
                     .catch((err) => {
                         alert(err)
-                    })
+                    })*/
             }
 
         },

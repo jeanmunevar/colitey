@@ -24,7 +24,7 @@ document.getElementById("formulario").addEventListener('submit', (evt => {
         else {
 
             alert("Bienvenido administrador");
-            window.location = './add.html';
+            window.location = './console/';
 
         }
     }).catch((error)=>{

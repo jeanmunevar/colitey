@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5106d36a-2faf-432f-88ae-3f210d3d88de" name="colitey" url="http://ftp.colitey.edu.co">
+        <fileTransfer host="ftp.colitey.edu.co" port="21" rootFolder="/public_html/site">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

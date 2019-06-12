@@ -98,8 +98,9 @@ if ($result){
             {
                 //No existe en la base de datos
                 echo json_encode([
-                 'codigo' => '103',
-                'Mensaje' => "El numero digitado no existe en la base de datos",
+                    'data'=>[ 'codigo' => '103',
+                        'Mensaje' => "El numero digitado no existe en la base de datos",]
+
                 ], JSON_UNESCAPED_UNICODE);
             }
         }

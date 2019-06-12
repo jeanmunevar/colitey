@@ -1022,7 +1022,7 @@ img {
     right: 0;
     width: 55px;
     height: 48px;
-    background-color: #69bc5f;
+    background-color: #2c40bc;
     border: none;
     z-index: 10;
     cursor: pointer;
@@ -1185,9 +1185,9 @@ img {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
         filter: alpha(opacity=0); }
     .single-accordion h6 a.collapsed {
-      background: #61ba6d;
-      background: -webkit-linear-gradient(to right, #61ba6d, #83c331);
-      background: linear-gradient(to right, #61ba6d, #83c331);
+      background: #c32f21;
+      /*background: -webkit-linear-gradient(to right, #61ba6d, #83c331);*/
+      /*background: linear-gradient(to right, #61ba6d, #83c331);*/
       color: #ffffff; }
       .single-accordion h6 a.collapsed span.accor-close {
         opacity: 0;

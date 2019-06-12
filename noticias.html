@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Colegio ITEY</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/school-images/escudo.png">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-- ##### Preloader ##### -->
+<div id="preloader">
+    <i class="circle-preloader"></i>
+</div>
+
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
+
+    <!-- Top Header Area -->
+    <div class="top-header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <div class="header-content h-100 d-flex align-items-center justify-content-between">
+                        <div class="academy-logo">
+                            <a href="./"><img src="img/school-images/logo1.png" width="80%" alt=""></a>
+                        </div>
+                        <div class="login-content">
+                            <!--<a href="#">Registrese</a> / <a href="#">Ingrese</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Area -->
+    <div class="academy-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Menu -->
+
+                <nav class="classy-navbar justify-content-between" id="academyNav">
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- close btn -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <img src="./img/icons/inicio.png" width="2%" class="iconos-ocultos" alt="">
+                                <li><a href="./">Inicio</a></li>
+                                <img src="./img/icons/INSTITUCIONAL.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                <li><a href="./institucional"> Institucional</a></li>
+                                <img src="./img/icons/escuela.png" alt="" width="4%">
+                                <li><a href="#">Jornada escolar</a>
+                                    <ul class="dropdown">
+                                        <li><a href="institucional">Primaria</a></li>
+                                        <li><a href="institucional">Secundaria</a></li>
+                                        <li><a href="institucional">Complementaria</a></li>
+                                        <li><a href="institucional">Media técnica</a></li>
+                                        <li><a href="institucional">Preescolar</a></li>
+                                    </ul>
+                                </li>
+                                <img src="./img/icons/hombre-corriendo.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                <li><a href="#">Zona rápida</a>
+                                    <ul class="dropdown">
+                                        <li><a href="voting">Votaciones</a></li>
+                                        <li><a href="./votingAdmin">Administrador</a></li>
+                                        <li><a href="./results">Resultados</a></li>
+                                    </ul>
+                                </li>
+                                <img src="./img/icons/contacto.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                <li><a href="institucional">Contactenos</a></li>
+                            </ul>
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Hero Area Start ##### -->
+
+<!-- ##### Hero Area End ##### -->
+
+<div style="background: #E0E2E8">
+
+    <div class="breadcumb-area bg-img" style="background-image: url(img/school-images/slide.jpg);">
+        <div class="bradcumbContent">
+            <h2>Noticias</h2>
+        </div>
+    </div>
+    <!-- ##### Top Feature Area End ##### -->
+    <div style="margin-top: 2%">
+
+    </div>
+    <br>
+    <!-- ##### Course Area Start ##### -->
+
+    <div class="academy-courses-area section-padding-100-0" >
+        <div class="container">
+            <div class="row" id="app2">
+                <div class="col-12 col-md-12">
+                    <div class="academy-blog-posts">
+
+                        <div class="row">
+
+                            <hr>
+                            <br><br style="margin-bottom: 10%">
+                            <!-- Single Blog Start -->
+                            <div class="col-12" v-for="noticia in news">
+                            <div class="single-blog-post mb-50 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Post Thumb -->
+                                <div class="blog-post-thumb mb-50">
+                                    <img :src="'./img/mediaArticles/2/'+noticia.imagen" alt="">
+                                </div>
+                                <!-- Post Title -->
+                                <a href="#" class="post-title">{{noticia.titulo}}</a>
+                                <!-- Post Meta -->
+                                <div class="post-meta">
+                                    <p>Por  <a href="#">Itey</a> | <a href="#">{{noticia.fechaCreacion}}</a> |</p>
+                                </div>
+                                <!-- Post Excerpt -->
+                                <p style="text-align: justify">{{noticia.prefacio}}</p>
+                                <!-- Read More btn -->
+                                <!--<a href="#" class="btn academy-btn btn-sm mt-15" onclick="document.getElementsByClassName('nota')">Read More</a>-->
+                                <br>
+                                <p  class="nota" style="text-align: justify">{{noticia.nota}}</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- Pagination Area Start -->
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="academy-blog-sidebar">
+                        <!-- Blog Post Widget -->
+                        <!--<div class="blog-post-search-widget mb-30">-->
+                            <!--<form action="#" method="post">-->
+                                <!--<input type="search" name="search" id="Search" placeholder="Search">-->
+                                <!--<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>-->
+                            <!--</form>-->
+                        <!--</div>-->
+
+                        <!-- Blog Post Catagories -->
+                        <!--<div class="blog-post-categories mb-30">-->
+                            <!--<h5>Categories</h5>-->
+                            <!--<ul>-->
+                                <!--<li><a href="#">Courses</a></li>-->
+                                <!--<li><a href="#">Education</a></li>-->
+                                <!--<li><a href="#">Teachers</a></li>-->
+                                <!--<li><a href="#">Uncategorized</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+
+                        <!-- Latest Blog Posts Area -->
+                        <!--<div class="latest-blog-posts mb-30">-->
+                            <!--<h5>Latest Posts</h5>-->
+                            <!--&lt;!&ndash; Single Latest Blog Post &ndash;&gt;-->
+                            <!--<div class="single-latest-blog-post d-flex mb-30">-->
+                                <!--<div class="latest-blog-post-thumb">-->
+                                    <!--<img src="img/blog-img/lb-1.jpg" alt="">-->
+                                <!--</div>-->
+                                <!--<div class="latest-blog-post-content">-->
+                                    <!--<a href="#" class="post-title">-->
+                                        <!--<h6>New Courses for you</h6>-->
+                                    <!--</a>-->
+                                    <!--<a href="#" class="post-date">March 18, 2018</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; Single Latest Blog Post &ndash;&gt;-->
+                            <!--<div class="single-latest-blog-post d-flex mb-30">-->
+                                <!--<div class="latest-blog-post-thumb">-->
+                                    <!--<img src="img/blog-img/lb-2.jpg" alt="">-->
+                                <!--</div>-->
+                                <!--<div class="latest-blog-post-content">-->
+                                    <!--<a href="#" class="post-title">-->
+                                        <!--<h6>A great way to start</h6>-->
+                                    <!--</a>-->
+                                    <!--<a href="#" class="post-date">March 18, 2018</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; Single Latest Blog Post &ndash;&gt;-->
+                            <!--<div class="single-latest-blog-post d-flex mb-30">-->
+                                <!--<div class="latest-blog-post-thumb">-->
+                                    <!--<img src="img/blog-img/lb-3.jpg" alt="">-->
+                                <!--</div>-->
+                                <!--<div class="latest-blog-post-content">-->
+                                    <!--<a href="#" class="post-title">-->
+                                        <!--<h6>New Courses for you</h6>-->
+                                    <!--</a>-->
+                                    <!--<a href="#" class="post-date">March 18, 2018</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; Single Latest Blog Post &ndash;&gt;-->
+                            <!--<div class="single-latest-blog-post d-flex">-->
+                                <!--<div class="latest-blog-post-thumb">-->
+                                    <!--<img src="img/blog-img/lb-4.jpg" alt="">-->
+                                <!--</div>-->
+                                <!--<div class="latest-blog-post-content">-->
+                                    <!--<a href="#" class="post-title">-->
+                                        <!--<h6>Start your training</h6>-->
+                                    <!--</a>-->
+                                    <!--<a href="#" class="post-date">March 18, 2018</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!-- Add Widget -->
+                        <!--<div class="add-widget">-->
+                            <!--<a href="#"><img src="img/blog-img/add.png" alt=""></a>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<footer class="footer-area">
+    <div class="main-footer-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <a href=""><h3 STYLE="color: white;">Colegio ITEY</h3></a>
+                        </div>
+                        <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod erat. Ut at erat et arcu pulvinar cursus a eget.</p>
+                        <div class="footer-social-info">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <h6>Enlaces útiles</h6>
+                        </div>
+                        <nav>
+                            <ul class="useful-links">
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Servicios</a></li>
+                                <li><a href="#">Academico</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <h6>Galería</h6>
+                        </div>
+                        <div class="gallery-list d-flex justify-content-between flex-wrap">
+                            <a href="img/bg-img/gallery1.jpg" class="gallery-img" title="Gallery Image 1"><img src="img/bg-img/gallery1.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery2.jpg" class="gallery-img" title="Gallery Image 2"><img src="img/bg-img/gallery2.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery3.jpg" class="gallery-img" title="Gallery Image 3"><img src="img/bg-img/gallery3.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery4.jpg" class="gallery-img" title="Gallery Image 4"><img src="img/bg-img/gallery4.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery5.jpg" class="gallery-img" title="Gallery Image 5"><img src="img/bg-img/gallery5.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery6.jpg" class="gallery-img" title="Gallery Image 6"><img src="img/bg-img/gallery6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <h6>Contacto</h6>
+                        </div>
+                        <div class="single-contact d-flex mb-30">
+                            <i class="icon-placeholder"></i>
+                            <p>Carrera 21 No 39 05</p>
+                        </div>
+                        <div class="single-contact d-flex mb-30">
+                            <i class="icon-telephone-1"></i>
+                            <p>Telefonos <br> 6343559</p>
+                        </div>
+                        <div class="single-contact d-flex">
+                            <i class="icon-contract"></i>
+                            <p>colegioitey@itey.edu.co</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- ##### Footer Area Start ##### -->
+
+<!-- ##### All Javascript Script ##### -->
+<!-- jQuery-2.2.4 js -->
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="js/bootstrap/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<!-- All Plugins js -->
+<script src="js/plugins/plugins.js"></script>
+<!-- Active js -->
+<script src="js/active.js"></script>
+<script src="./fun/showArticles/show2.js"></script>
+
+</body>
+<style>
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+    .embed-container iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+</html>

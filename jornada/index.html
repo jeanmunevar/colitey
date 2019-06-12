@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Colegio ITEY</title>
+    <!--Vue-->
+    <link rel="stylesheet" href="./../style.css">
+    <!--<link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./../img/school-images/escudo.png">
+    <link href="./../css/font-awesome.min.css" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Core Stylesheet -->
+    <script src="https://unpkg.com/v-switch-case@1.0.2/dist/v-switch.min.js"></script>
+    <!-- Core Stylesheet -->
+    <script>
+        Vue.use(VSwitch)
+    </script>
+
+
+</head>
+
+<body>
+
+
+<!-- ##### Preloader ##### -->
+<div id="preloader">
+    <i class="circle-preloader"></i>
+</div>
+
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
+
+    <!-- Top Header Area -->
+    <div class="top-header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <div class="header-content h-100 d-flex align-items-center justify-content-between">
+                        <div class="academy-logo">
+                            <a href="./"><img src="./../img/school-images/logo1.png" width="80%" alt=""></a>
+                        </div>
+                        <div class="login-content">
+                            <!--<a href="#">Registrese</a> / <a href="#">Ingrese</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Area -->
+    <div class="academy-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container" style="padding-top: 0">
+                <!-- Menu -->
+
+                <nav class="classy-navbar justify-content-between" id="academyNav" style="padding-top: 0;">
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- close btn -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <img src="./../img/icons/inicio.png" width="2%" class="iconos-ocultos" alt="">
+                                <li><a href="./../">Inicio</a></li>
+                                <img src="./../img/icons/INSTITUCIONAL.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                <li><a href="./../institucional"> Institucional</a></li>
+                                <img src="./../img/icons/escuela.png" alt="" width="4%">
+                                <li><a href="#">Jornada escolar</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./../underConstruction">Primaria</a></li>
+                                        <li><a href="./../underConstruction">Secundaria</a></li>
+                                        <li><a href="./../underConstruction">Complementaria</a></li>
+                                        <li><a href="./../underConstruction">Media técnica</a></li>
+                                        <li><a href="./../underConstruction">Preescolar</a></li>
+                                    </ul>
+                                </li>
+                                <img src="./../img/icons/hombre-corriendo.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                <li><a href="#">Zona rápida</a>
+
+                                    <ul class="dropdown">
+                                        <li><a href="./../voting">Votaciones</a></li>
+                                        <li><a href="./../votingAdmin">Administrador</a></li>
+                                        <li><a href="./../results">Resultados</a></li>
+                                        <li><a href="./../docentes">Docentes</a></li>
+                                    </ul>
+                                </li>
+
+                                <img src="./../img/icons/contacto.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                <li><a href="./../underConstruction">Contactenos</a></li>
+                            </ul>
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Hero Area Start ##### -->
+
+<!-- ##### Hero Area End ##### -->
+
+<div id="app">
+
+        <div class="breadcumb-area bg-img" style="background-image: url(./../img/school-images/slide.jpg);">
+            <div class="bradcumbContent" v-switch="opcion">
+                <h2 v-case="'5'">Noticias Preescolar</h2>
+                <h2 v-case="'6'">Noticias Primaria</h2>
+                <h2 v-case="'7'">Noticias Secundaria</h2>
+                <h2 v-case="'8'">Noticias Media Tecnica</h2>
+                <h2 v-case="'9'">Jornada Complementaria</h2>
+                <h2 v-case="'0'">Noticias por Jornada</h2>
+            </div>
+        </div>
+    <!-- ##### Top Feature Area End ##### -->
+        <div style="margin-top: 2%">
+
+        </div>
+        <!-- ##### Inicio blog ##### -->
+        <div class="blog-area mt-50 section-padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="academy-blog-posts">
+                            <div class="row">
+                                <!-- Single Blog Start -->
+                                <div v-switch="opcion">
+                                    <div v-case="'5'" class="col-12" v-for="not5 in noticiasPreescolar">
+                                        <div class="single-blog-post mb-50 wow fadeInUp" data-wow-delay="300ms">
+                                            <!-- Post Thumb -->
+                                            <div class="blog-post-thumb mb-50">
+                                                <img :src="'./../img/mediaArticles/5/'+not5.imagen" alt="">
+                                            </div>
+                                            <!-- Post Title -->
+                                            <a href="#" class="post-title">{{not5.titulo}}</a>
+                                            <!-- Post Meta -->
+                                            <div class="post-meta">
+                                                <p>Por <a href="#">Colegio ITEY</a> | <a href="#">{{not5.fechaCreacion}}</a></p>
+                                            </div>
+                                            <!-- Post Excerpt -->
+                                            <p style="text-align: justify">{{not5.prefacio}}</p>
+                                            <!-- Read More btn -->
+                                            <br>
+                                            <p style="text-align: justify">{{not5.nota}}</p>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div v-case="'6'" v-for="not6 in noticiasPrimaria" class="col-12">
+                                        <div class="single-blog-post mb-50 wow fadeInUp" data-wow-delay="300ms">
+                                            <!-- Post Thumb -->
+                                            <div class="blog-post-thumb mb-50">
+                                                <img :src="'./../img/mediaArticles/6/'+not6.imagen" alt="">
+                                            </div>
+                                            <!-- Post Title -->
+                                            <a href="#" class="post-title">{{not6.titulo}}</a>
+                                            <!-- Post Meta -->
+                                            <div class="post-meta">
+                                                <p>Por <a href="#">Colegio ITEY</a> | <a href="#">{{not6.fechaCreacion}}</a></p>
+                                            </div>
+                                            <!-- Post Excerpt -->
+                                            <p style="text-align: justify">{{not6.prefacio}}</p>
+                                            <!-- Read More btn -->
+                                            <br>
+                                            <p style="text-align: justify">{{not6.nota}}</p>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div v-case="'7'" v-for="not7 in noticiasSecundaria" class="col-12">
+                                        <div class="single-blog-post mb-50 wow fadeInUp" data-wow-delay="300ms">
+                                            <!-- Post Thumb -->
+                                            <div class="blog-post-thumb mb-50">
+                                                <img :src="'./../img/mediaArticles/7/'+not7.imagen" alt="">
+                                            </div>
+                                            <!-- Post Title -->
+                                            <a href="#" class="post-title">{{not7.titulo}}</a>
+                                            <!-- Post Meta -->
+                                            <div class="post-meta">
+                                                <p>Por <a href="#">Colegio ITEY</a> | <a href="#">{{not7.fechaCreacion}}</a></p>
+                                            </div>
+                                            <!-- Post Excerpt -->
+                                            <p style="text-align: justify">{{not7.prefacio}}</p>
+                                            <!-- Read More btn -->
+                                            <br>
+                                            <p style="text-align: justify">{{not7.nota}}</p>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div v-case="'8'" v-for="not8 in noticiasEspecialidad" class="col-12">
+                                        <div class="single-blog-post mb-50 wow fadeInUp" data-wow-delay="300ms">
+                                            <!-- Post Thumb -->
+                                            <div class="blog-post-thumb mb-50">
+                                                <img :src="'./../img/mediaArticles/8/'+not8.imagen" alt="">
+                                            </div>
+                                            <!-- Post Title -->
+                                            <a href="#" class="post-title">{{not8.titulo}}</a>
+                                            <!-- Post Meta -->
+                                            <div class="post-meta">
+                                                <p>Por <a href="#">Colegio ITEY</a> | <a href="#">{{not8.fechaCreacion}}</a></p>
+                                            </div>
+                                            <!-- Post Excerpt -->
+                                            <p style="text-align: justify">{{not8.prefacio}}</p>
+                                            <!-- Read More btn -->
+                                            <br>
+                                            <p style="text-align: justify">{{not8.nota}}</p>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div v-case="'9'" v-for="not9 in noticiasComplementaria" class="col-12">
+                                        <div class="single-blog-post mb-50 wow fadeInUp" data-wow-delay="300ms">
+                                            <!-- Post Thumb -->
+                                            <div class="blog-post-thumb mb-50">
+                                                <img :src="'./../img/mediaArticles/9/'+not9.imagen" alt="">
+                                            </div>
+                                            <!-- Post Title -->
+                                            <a href="#" class="post-title">{{not9.titulo}}</a>
+                                            <!-- Post Meta -->
+                                            <div class="post-meta">
+                                                <p>Por <a href="#">Colegio ITEY</a> | <a href="#">{{not9.fechaCreacion}}</a></p>
+                                            </div>
+                                            <!-- Post Excerpt -->
+                                            <p style="text-align: justify">{{not9.prefacio}}</p>
+                                            <!-- Read More btn -->
+                                            <br>
+                                            <p style="text-align: justify">{{not9.nota}}</p>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div v-case="'0'" class="col-12" v-for="not0 in noticias">
+                                        <div class="single-blog-post mb-50 wow fadeInUp" data-wow-delay="300ms">
+                                            <!-- Post Thumb -->
+                                            <div class="blog-post-thumb mb-50">
+                                                <img :src="'fun/'+not0.directorio" alt="">
+                                            </div>
+                                            <!-- Post Title -->
+                                            <a href="#" class="post-title">{{not0.titulo}}</a>
+                                            <!-- Post Meta -->
+                                            <div class="post-meta">
+                                                <p>Por <a href="#">Colegio ITEY</a> | <a href="#">{{not0.fechaCreacion}}</a></p>
+                                            </div>
+                                            <!-- Post Excerpt -->
+                                            <p style="text-align: justify">{{not0.prefacio}}</p>
+                                            <!-- Read More btn -->
+                                            <br>
+                                            <p style="text-align: justify">{{not0.nota}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Single Blog Start -->
+
+
+                        </div>
+                    </div>
+                    <!-- Pagination Area Start -->
+                    <!--<div class="academy-pagination-area wow fadeInUp" data-wow-delay="400ms">-->
+                        <!--<nav>-->
+                            <!--<ul class="pagination">-->
+                                <!--<li class="page-item active"><a class="page-link" href="#">01</a></li>-->
+                                <!--<li class="page-item"><a class="page-link" href="#">02</a></li>-->
+                                <!--<li class="page-item"><a class="page-link" href="#">03</a></li>-->
+                            <!--</ul>-->
+                        <!--</nav>-->
+                    <!--</div>-->
+                </div>
+                    <!-- No tocar, es el menu de la derecha-->
+                    <div class="col-12 col-md-4">
+                    <div class="academy-blog-sidebar">
+                        <!-- Blog Post Widget -->
+                        <!--<div class="blog-post-search-widget mb-30">-->
+                            <!--<form action="#" method="post">-->
+                                <!--<input type="search" name="search" id="Search" placeholder="Search">-->
+                                <!--<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>-->
+                            <!--</form>-->
+                        <!--</div>-->
+
+                        <!-- Blog Post Catagories -->
+                        <div class="blog-post-categories mb-30">
+                            <h5>Jornadas</h5>
+                            <ul>
+                                <li><a href="#" v-on:click="display('5')">Preescolar</a></li>
+                                <li><a href="#" v-on:click="display('6')">Primaria</a></li>
+                                <li><a href="#" v-on:click="display('7')">Secundaria</a></li>
+                                <li><a href="#" v-on:click="display('8')">Tecnica</a></li>
+                                <li><a href="#" v-on:click="display('9')">Complementaria</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Latest Blog Posts Area -->
+                        <div class="latest-blog-posts mb-30">
+                            <h5>Enlaces útiles</h5>
+                            <!-- Single Latest Blog Post -->
+                            <div class="single-latest-blog-post d-flex mb-30">
+                                <div class="latest-blog-post-thumb">
+                                    <img src="./../img/jornada/math.png" alt="">
+                                </div>
+                                <div class="latest-blog-post-content">
+                                    <a href="https://julioprofe.net/" class="post-title">
+                                        <h6>Clases en linea de Matematicas y fisica</h6>
+                                    </a>
+                                    <a href="#" class="post-date">Junio 04, 2019</a>
+                                </div>
+                            </div>
+                            <!-- Single Latest Blog Post -->
+                            <div class="single-latest-blog-post d-flex mb-30">
+                                <div class="latest-blog-post-thumb">
+                                    <img src="./../img/jornada/minedu.png" alt="">
+                                </div>
+                                <div class="latest-blog-post-content">
+                                    <a href="#" class="post-title">
+                                        <h6>Ministerio de educación</h6>
+                                    </a>
+                                    <a href="#" class="post-date">Junio 4, 2019</a>
+                                </div>
+                            </div>
+                            <!-- Single Latest Blog Post -->
+                            <div class="single-latest-blog-post d-flex mb-30">
+                                <div class="latest-blog-post-thumb">
+                                    <img src="./../img/jornada/science.png" alt="">
+                                </div>
+                                    <div class="latest-blog-post-content">
+                                        <a href="http://cienciajoven.cl/revista/" class="post-title">
+                                            <h6>Revista Cientifica</h6>
+                                        </a>
+                                        <a href="#" class="post-date">Junio 04, 2019</a>
+                                    </div>
+                            </div>
+                            <!-- Single Latest Blog Post -->
+                                <div class="single-latest-blog-post d-flex">
+                                    <div class="latest-blog-post-thumb">
+                                        <img src="./../img/jornada/developer.png" alt="">
+                                    </div>
+                                    <div class="latest-blog-post-content">
+                                        <a href="https://www.freecodecamp.org/" class="post-title">
+                                            <h6>¿Quieres ser programador?</h6>
+                                            <p>Descubre como ser parte del futuro, es gratuito.</p>
+                                        </a>
+                                        <a href="#" class="post-date">Junio 04, 2019</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Add Widget -->
+                            <div class="add-widget">
+                                <a href="#"><img src="./../img/jornada/banner.JPG" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---->
+
+
+</div>
+
+<footer class="footer-area">
+    <div class="main-footer-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <a href=""><h3 STYLE="color: white;">Colegio ITEY</h3></a>
+                        </div>
+                        <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod erat. Ut at erat et arcu pulvinar cursus a eget.</p>
+                        <div class="footer-social-info">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <h6>Enlaces útiles</h6>
+                        </div>
+                        <nav>
+                            <ul class="useful-links">
+                                <li><a href="#app">Inicio</a></li>
+                                <li><a href="#app">Servicios</a></li>
+                                <li><a href="#app">Academico</a></li>
+                                <li><a href="#app">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <h6>Galería</h6>
+                        </div>
+                        <div class="gallery-list d-flex justify-content-between flex-wrap">
+                            <a href="./../img/bg-img/gallery1.jpg" class="gallery-img" title="Gallery Image 1"><img src="./../img/bg-img/gallery1.jpg" alt=""></a>
+                            <a href="./../img/bg-img/gallery2.jpg" class="gallery-img" title="Gallery Image 2"><img src="./../img/bg-img/gallery2.jpg" alt=""></a>
+                            <a href="./../img/bg-img/gallery3.jpg" class="gallery-img" title="Gallery Image 3"><img src="./../img/bg-img/gallery3.jpg" alt=""></a>
+                            <a href="./../img/bg-img/gallery4.jpg" class="gallery-img" title="Gallery Image 4"><img src="./../img/bg-img/gallery4.jpg" alt=""></a>
+                            <a href="./../img/bg-img/gallery5.jpg" class="gallery-img" title="Gallery Image 5"><img src="./../img/bg-img/gallery5.jpg" alt=""></a>
+                            <a href="./../img/bg-img/gallery6.jpg" class="gallery-img" title="Gallery Image 6"><img src="./../img/bg-img/gallery6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <h6>Contacto</h6>
+                        </div>
+                        <div class="single-contact d-flex mb-30">
+                            <i class="icon-placeholder"></i>
+                            <p>Carrera 21 No 39 05</p>
+                        </div>
+                        <div class="single-contact d-flex mb-30">
+                            <i class="icon-telephone-1"></i>
+                            <p>Telefonos <br> 6343559</p>
+                        </div>
+                        <div class="single-contact d-flex">
+                            <i class="icon-contract"></i>
+                            <p>colegioitey@itey.edu.co</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- ##### Footer Area Start ##### -->
+
+<!-- ##### All Javascript Script ##### -->
+<!-- jQuery-2.2.4 js -->
+<script src="./../js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<!--<script src="./../js/bootstrap/popper.min.js"></script>-->
+<!-- Bootstrap js -->
+<link rel="stylesheet" href="./../css/bootstrap.css">
+<!-- All Plugins js -->
+<script src="./../js/plugins/plugins.js"></script>
+<!-- Active js -->
+<script src="./../js/active.js"></script>
+<!--Vue instance-->
+<script src="./../fun/showArticles/jornadas_noticias.js"></script>
+
+</body>
+
+</html>

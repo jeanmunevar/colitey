@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentos Institucionales</title>
+
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main_console.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.css">-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <link rel="icon" href="../img/school-images/escudo.png">
+    <link href="./../css/font-awesome.min.css" rel="stylesheet">
+
+    <!--Vue switch, uso esta cdn para poder usar la directiva de vue de switch case-->
+
+    <!-- Core Stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+<header role="banner">
+
+    <h1><a href=".."><img src="../img/school-images/logo1.png" alt="logo itey" width="35%" style="margin-right: 2%"></a>Panel de administración</h1>
+    <ul class="utilities">
+        <br>
+        <li class="users"><a href="#">Cuenta</a></li>
+        <li class="logout warn"><a href="">Salir</a></li>
+    </ul>
+</header>
+
+<nav role='navigation'>
+    <ul class="main">
+        <li class="dashboard"><a href="./">Inicio</a></li>
+        <li class="edit"><a href="./news">Noticias</a></li>
+        <li class="write"><a href="./docentes">Docentes</a></li>
+        <li class="edit"><a href="./files">Documentos Institucionales</a></li>
+        <li class="comments"><a href="#">Mensajes</a></li>
+        <li class="users"><a href="#">Usuarios</a></li>
+    </ul>
+</nav>
+
+<main role="main">
+
+    <section class="panel important" id="app">
+        <!--Formulario para envío-->
+        <h2>Gestor de documentos institucionales</h2>
+        <br><br>
+        <form action="" v-on:submit.prevent="crear">
+            <div class="form-group">
+                <label for="">Nombre del archivo a subir</label>
+                <input type="text" class="form-control" v-model="documento.nombre">
+            </div>
+            <div class="form-group">
+                <label for="">Descrición del archivo a subir</label>
+                <input type="text" class="form-control" v-model="documento.descripcion">
+            </div>
+            <div class="form-group">
+                <label for="">Seleccione el archivo a subir</label>
+                <input type="file" accept="application/pdf" id="documento" ref="doc">
+
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-info" value="Enviar">
+            </div>
+        </form>
+        <!--Acaba formulario de envio-->
+
+        <div class="bradcumbContent" style="text-align: center">
+            <h2>Listado de documentos</h2>
+        </div>
+
+        <table class="table-responsive table-bordered" id="articulos">
+            <thead>
+            <tr>
+                <th scope="col"># Documento</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">descripción</th>
+                <th scope="col">Nombre del archivo</th>
+                <th scope="col">Opciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="documento in documentos">
+                <td width="5%">{{documento.id}}</td>
+                <td>{{documento.nombre}}</td>
+                <td>{{documento.descripcion}}</td>
+                <td>{{documento.filename}}</td>
+
+                <td>
+                    <button @click="eliminar(documento)" class="btn btn-danger" type="button">Eliminar</button>
+                    <button @click="editar(documento)" class="btn btn-info" type="button">Editar</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+
+</main>
+</body>
+<script src="./../fun/documentosInstitucionales/subir.js"></script>
+
+</html>

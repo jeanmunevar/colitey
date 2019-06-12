@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <script src=" https://unpkg.com/vue-gallery"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <!-- Title -->
+    <title>Colegio ITEY</title>
+    <script src="./js/jquery.flexslider-min.js"></script>
+    <script src="./js/jquery.flexslider.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="img/school-images/escudo.png">
+    <!--<link href="./css/font-awesome.min.css" rel="stylesheet">-->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!--Vuetify-->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <!--Material-->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css">
+    <!---->
+    <script src="https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js"></script>
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.5.14/vuetify.css">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.5.14/vuetify.css">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- ##### Preloader ##### -->
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+    </div>
+
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
+
+    <!-- Top Header Area -->
+    <div class="top-header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <div class="header-content h-100 d-flex align-items-center justify-content-between">
+                        <div class="academy-logo">
+                            <a href="./"><img src="img/school-images/logo1.png" width="80%" alt=""></a>
+                        </div>
+                        <div class="login-content">
+                            <!--<a href="#">Registrese</a> / <a href="#">Ingrese</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Area -->
+    <div class="academy-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container" style="padding-top: 0">
+                <!-- Menu -->
+
+                <nav class="classy-navbar justify-content-between" id="academyNav" style="padding-top: 0; margin-left: 5%">
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- close btn -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <img src="./img/icons/inicio.png" width="2%" class="iconos-ocultos" alt="">
+                                <li><a href="./">Inicio</a></li>
+                                <img src="./img/icons/INSTITUCIONAL.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                <li><a href="./institucional"> Institucional</a></li>
+                                <img src="./img/icons/escuela.png" alt="" width="4%">
+                                <li><a href="#">Jornada escolar</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./underConstruction">Primaria</a></li>
+                                        <li><a href="./underConstruction">Secundaria</a></li>
+                                        <li><a href="./underConstruction">Complementaria</a></li>
+                                        <li><a href="./underConstruction">Media técnica</a></li>
+                                        <li><a href="./underConstruction">Preescolar</a></li>
+                                    </ul>
+                                </li>
+                                <img src="./img/icons/hombre-corriendo.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                <li><a href="#">Zona rápida</a>
+
+                                    <ul class="dropdown">
+                                        <li><a href="./voting">Votaciones</a></li>
+                                        <li><a href="./votingAdmin">Administrador</a></li>
+                                        <li><a href="./results">Resultados</a></li>
+                                        <li><a href="./docentes">Docentes</a></li>
+                                    </ul>
+                                </li>
+
+                                <img src="./img/icons/contacto.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                <li><a href="./underConstruction">Contactenos</a></li>
+                            </ul>
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+    <div style="background: #E0E2E8; margin: 0;padding: 0;">
+        <div class="breadcumb-area bg-img" style="background-image: url(img/school-images/slide.jpg);">
+        <div class="bradcumbContent">
+            <h2>Galería</h2>
+        </div>
+    </div>
+    <!-- ##### Top Feature Area End ##### -->
+        <div style="margin-top: 2%">
+    </div>
+    <br>
+    <!-- ##### Course Area Start ##### -->
+
+    <div class="academy-courses-area section-padding-100-0" >
+       <div class="container" id="app">
+           <v-app id="inspire">
+               <v-container>
+                   <v-window v-model="onboarding">
+                       <v-window-item v-for="(foto, n) in fotografias" :key="`card-${n}`">
+                           <v-card>
+                               <v-img :src="'./img/mediaArticles/3/'+foto.imagen" height="500px">
+                                   <v-container fill-height="fill-height" fluid="fluid">
+                                       <v-layout fill-height="fill-height"><span class="headline white--text" v-text="foto.idpublicacion"></span></v-layout>
+                                   </v-container>
+                               </v-img>
+                               <v-card-title primary-title="primary-title">
+                                   <div>
+                                       <div class="headline" v-text="foto.titulo"></div>
+                                       <div class="text--secondary"  v-text="foto.fechaCreacion"></div>
+                                       <span class="grey--text" v-text="foto.prefacio"></span>
+                                   </div>
+                               </v-card-title>
+                           </v-card>
+                       </v-window-item>
+                   </v-window>
+                   <v-item-group class="text-xs-center" v-model="onboarding" mandatory="mandatory">
+                       <v-item v-for="(foto, n) in fotografias" :key="`btn-${n}`">
+                           <v-btn slot-scope="{ active, toggle }" :input-value="active" icon="icon" @click="toggle">
+                               <v-icon>mdi-record</v-icon>
+                           </v-btn>
+                       </v-item>
+                   </v-item-group>
+               </v-container>
+           </v-app>
+       </div>
+
+        </div>
+    </div>
+
+    <footer class="footer-area">
+        <div class="main-footer-area section-padding-100-0">
+            <div class="container">
+                <div class="row">
+                <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget mb-100">
+                            <div class="widget-title">
+                                <a href=""><h3 STYLE="color: white;">Colegio ITEY</h3></a>
+                            </div>
+                            <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod erat. Ut at erat et arcu pulvinar cursus a eget.</p>
+                            <div class="footer-social-info">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-behance"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget mb-100">
+                            <div class="widget-title">
+                                <h6>Enlaces útiles</h6>
+                            </div>
+                            <nav>
+                                <ul class="useful-links">
+                                    <li><a href="#">Inicio</a></li>
+                                    <li><a href="#">Servicios</a></li>
+                                    <li><a href="#">Academico</a></li>
+                                    <li><a href="#">Contacto</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget mb-100">
+                            <div class="widget-title">
+                                <h6>Galería</h6>
+                            </div>
+                            <div class="gallery-list d-flex justify-content-between flex-wrap">
+                                <a href="img/bg-img/gallery1.jpg" class="gallery-img" title="Gallery Image 1"><img src="img/bg-img/gallery1.jpg" alt=""></a>
+                                <a href="img/bg-img/gallery2.jpg" class="gallery-img" title="Gallery Image 2"><img src="img/bg-img/gallery2.jpg" alt=""></a>
+                                <a href="img/bg-img/gallery3.jpg" class="gallery-img" title="Gallery Image 3"><img src="img/bg-img/gallery3.jpg" alt=""></a>
+                                <a href="img/bg-img/gallery4.jpg" class="gallery-img" title="Gallery Image 4"><img src="img/bg-img/gallery4.jpg" alt=""></a>
+                                <a href="img/bg-img/gallery5.jpg" class="gallery-img" title="Gallery Image 5"><img src="img/bg-img/gallery5.jpg" alt=""></a>
+                                <a href="img/bg-img/gallery6.jpg" class="gallery-img" title="Gallery Image 6"><img src="img/bg-img/gallery6.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget mb-100">
+                            <div class="widget-title">
+                                <h6>Contacto</h6>
+                            </div>
+                            <div class="single-contact d-flex mb-30">
+                                <i class="icon-placeholder"></i>
+                                <p>Carrera 21 No 39 05</p>
+                            </div>
+                            <div class="single-contact d-flex mb-30">
+                                <i class="icon-telephone-1"></i>
+                                <p>Telefonos <br> 6343559</p>
+                            </div>
+                            <div class="single-contact d-flex">
+                                <i class="icon-contract"></i>
+                                <p>colegioitey@itey.edu.co</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+<!-- ##### Footer Area Start ##### -->
+
+<!-- ##### All Javascript Script ##### -->
+<!-- jQuery-2.2.4 js -->
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="js/bootstrap/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<!-- All Plugins js -->
+<script src="js/plugins/plugins.js"></script>
+<!-- Active js -->
+<script src="js/active.js"></script>
+<script src="./js/jssor.slider-27.5.0.min.js"></script>
+
+</body>
+<style scoped>
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+    .embed-container iframe {
+
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    /**/
+
+</style>
+
+<script>
+
+    let app = new  Vue({
+        el: '#app',
+        data: {
+            onboarding: 0,
+            fotografias:[],
+
+        },
+        methods:{
+            next () {
+                this.onboarding = this.onboarding + 1 === this.fotografias.length
+                    ? 0
+                    : this.onboarding + 1
+            },
+            prev () {
+                this.onboarding = this.onboarding - 1 < 0
+                    ? this.fotografias.length - 1
+                    : this.onboarding - 1
+            }
+        },
+        mounted(){
+            fetch('./fun/showArticles/show.php?categoria=3',{
+
+            }).then((response) => {
+                return response.json()
+            }).then((data) => {
+                data.data.forEach((e)=>{
+                    this.fotografias.push(e);
+                })
+            }).catch((error)=>{
+                console.log(error);
+            })
+        }
+    });
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.5.14/vuetify.css">
+</html>

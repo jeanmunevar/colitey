@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- La cdn de vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue@latest"></script>
+    <script src="https://unpkg.com/vue-select@latest"></script>
+    <!--#########################-->
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Colegio ITEY</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/school-images/escudo.png">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<!-- ##### Preloader ##### -->
+<div id="preloader">
+    <i class="circle-preloader"></i>
+</div>
+
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
+
+    <!-- Top Header Area -->
+    <div class="top-header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <div class="header-content h-100 d-flex align-items-center justify-content-between">
+                        <div class="academy-logo">
+                            <a href="index.html"><img src="img/school-images/logo1.png" width="80%" alt=""></a>
+                        </div>
+                        <div class="login-content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Area -->
+    <div class="academy-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Menu -->
+
+                <nav class="classy-navbar justify-content-between" id="academyNav">
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- close btn -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <img src="./img/icons/inicio.png" width="2%" class="iconos-ocultos" alt="">
+                                <li><a href="index.html">Inicio</a></li>
+                                <img src="./img/icons/INSTITUCIONAL.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                <li><a href="index.html"> Institucional</a></li>
+                                <li><a href="#">Jornada escolar</a>
+                                    <ul class="dropdown">
+                                        <li><a href="index.html">Primaria</a></li>
+                                        <li><a href="about-us.html">Secundaria</a></li>
+                                        <li><a href="course.html">Complementaria</a></li>
+                                        <li><a href="blog.html">Media técnica</a></li>
+                                        <li><a href="redes.html">Preescolar</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="about-us.html">Zona rápida</a>
+
+                                    <ul class="dropdown">
+                                        <li><a href="./voting.html">Votaciones</a></li>
+                                        <li><a href="./votingAdmin.html">Administrador</a></li>
+                                        <li><a href="./results.html">Resultados</a></li>
+                                    </ul>
+
+                                </li>
+
+
+                                <li><a href="redes.html">Contactenos</a></li>
+                            </ul>
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+
+                    <!-- Calling Info -->
+                    <!--<div class="calling-info">-->
+                    <!--<div class="call-center">-->
+                    <!--<a href="tel:+654563325568889"><i class="icon-telephone-2"></i> <span>(+65) 456 332 5568 889</span></a>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Breadcumb Area Start ##### -->
+<div class="breadcumb-area bg-img" style="background-image: url(./img/school-images/slide.jpg);">
+    <div class="bradcumbContent">
+        <h2>Votaciones 2019</h2>
+    </div>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+<section style="margin-bottom: 10%">
+
+</section>
+
+<!-- ##### About Us Area End ##### -->
+<!--TODO seguir con el formulario para ingresar candidatos-->
+<div id="swap">
+    <section style=" width: 100%; padding-left: 10% " id="candidates" >
+        <article >
+            <h2 >Resultado votación personería</h2>
+            <table style="margin-top: 5%" class="table table-responsive" id="listado">
+                <tr>
+                    <th>Identificación</th>
+                    <th>Nombre</th>
+                    <th>Grado</th>
+                    <th>Jornada</th>
+                    <th>Numero de votos</th>
+                    <th>Imagen</th>
+
+                </tr>
+                <tr v-for="personeros in personero">
+                    <td>{{personeros.documento}}</td>
+                    <td style="width: 20%">{{personeros.nombre}}</td>
+                    <td>{{personeros.grado_curso}}</td>
+                    <td>MAÑANA</td>
+                    <td>{{personeros.totalVotos}}</td>
+                    <td ><img style="width: 50%"  id="imagenCandidato"  v-bind:src="personeros.imagen" /></td>
+
+                </tr>
+            </table>
+
+        </article>
+
+
+        <article >
+            <h2 >Resultado votación representantes</h2>
+            <table style="margin-top: 5%" class="table table-responsive" id="listado">
+                <tr>
+                    <th>Identificación</th>
+                    <th>Nombre</th>
+                    <th>Grado</th>
+                    <th>Jornada</th>
+                    <th>Numero de votos</th>
+                    <th>Imagen</th>
+
+                </tr>
+                <tr v-for="representantes in representante">
+                    <td>{{representantes.documento}}</td>
+                    <td style="width: 20%">{{representantes.nombre}}</td>
+                    <td>{{representantes.grado_curso}}</td>
+                    <td>{{representantes.jornada}}</td>
+                    <td>{{representantes.totalVotos}}</td>
+                    <td ><img style="width: 50%"    v-bind:src="representantes.imagen" /></td>
+
+                </tr>
+            </table>
+
+        </article>
+
+        <article >
+            <h2 >Resultado votación docentes</h2>
+            <table style="margin-top: 5%" class="table table-responsive" id="listado">
+                <tr>
+                    <th>Identificación</th>
+                    <th>Nombre</th>
+
+                    <th>Numero de votos</th>
+                    <th>Imagen</th>
+
+                </tr>
+                <tr v-for="docentes in docente">
+                    <td>{{docentes.documento}}</td>
+                    <td style="width: 20%">{{docentes.nombre}}</td>
+                    <td>{{docentes.totalVotos}}</td>
+                    <td ><img style="width: 50%"    v-bind:src="docentes.imagen" /></td>
+
+                </tr>
+            </table>
+
+        </article>
+    </section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ##### Footer Area Start ##### -->
+<footer class="footer-area">
+    <div class="main-footer-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <a href=""><h3 STYLE="color: white;">Colegio ITEY</h3></a>
+                        </div>
+                        <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod erat. Ut at erat et arcu pulvinar cursus a eget.</p>
+                        <div class="footer-social-info">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <h6>Enlaces útiles</h6>
+                        </div>
+                        <nav>
+                            <ul class="useful-links">
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Servicios</a></li>
+                                <li><a href="#">Academico</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <h6>Galería</h6>
+                        </div>
+                        <div class="gallery-list d-flex justify-content-between flex-wrap">
+                            <a href="img/bg-img/gallery1.jpg" class="gallery-img" title="Gallery Image 1"><img src="img/bg-img/gallery1.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery2.jpg" class="gallery-img" title="Gallery Image 2"><img src="img/bg-img/gallery2.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery3.jpg" class="gallery-img" title="Gallery Image 3"><img src="img/bg-img/gallery3.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery4.jpg" class="gallery-img" title="Gallery Image 4"><img src="img/bg-img/gallery4.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery5.jpg" class="gallery-img" title="Gallery Image 5"><img src="img/bg-img/gallery5.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery6.jpg" class="gallery-img" title="Gallery Image 6"><img src="img/bg-img/gallery6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <h6>Contacto</h6>
+                        </div>
+                        <div class="single-contact d-flex mb-30">
+                            <i class="icon-placeholder"></i>
+                            <p>Carrera 21 No 39 05</p>
+                        </div>
+                        <div class="single-contact d-flex mb-30">
+                            <i class="icon-telephone-1"></i>
+                            <p>Telefonos <br> 6343559</p>
+                        </div>
+                        <div class="single-contact d-flex">
+                            <i class="icon-contract"></i>
+                            <p>colegioitey@itey.edu.co</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- ##### Footer Area Start ##### -->
+
+<!-- ##### All Javascript Script ##### -->
+<!-- jQuery-2.2.4 js -->
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="js/bootstrap/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<!-- All Plugins js -->
+<script src="js/plugins/plugins.js"></script>
+<!-- Active js -->
+<script src="js/active.js"></script>
+<script src="https://unpkg.com/vue@latest"></script>
+<script src="https://unpkg.com/vue-select@latest"></script>
+
+<script>
+
+    let app = new Vue({
+        el: '#swap',
+        data:{
+            personero:[],
+            representante:[],
+            docente:[],
+            cargos: [
+                {value: '1', label:'Representante de grado'},
+                {value: '2', label: 'Personero'},
+                {value: '3', label: 'Delegado profesorado'}
+            ],
+            tiposDocumento:[
+                {value:'1', label:'Cedula de ciudadanía'},
+                {value:'2', label: 'Tarjeta de identidad'},
+                {value:'3', label: 'Registro civil'},
+                {value:'4', label: 'Numero establecido por la secretaría.'}
+            ],
+            jornadas:[
+                {value:'1', label:'Jornada mañana'},
+                {value:'2', label:'Jornada tarde'}
+            ],
+            grados:[
+                {value:'1' , label:'TRANSICIÓN A TARDE', grado: "0"},
+                {value:'2' , label:'TRANSICIÓN B TARDE'},
+                {value:'3' , label:'TRANSICIÓN C TARDE'},
+                {value:'4' , label:'TRANSICIÓN D TARDE'},
+                {value:'5' , label:'TRANSICIÓN E TARDE'},
+                {value:'6' , label:'TRANSICIÓN F TARDE'},
+                {value:'101' , label:'PRIMERO A'},
+                {value:'102' , label:'PRIMERO B'},
+                {value:'103' , label:'PRIMERO C'},
+                {value:'104' , label:'PRIMERO D'},
+                {value:'105' , label:'PRIMERO E'},
+                {value:'106' , label:'PRIMERO F'},
+                {value:'107' , label:'PRIMERO G'},
+                {value:'108' , label:'PRIMERO H'},
+                {value:'109' , label:'PRIMERO I'},
+                {value:'111' , label:'TRANSICIÓN A MAÑANA'},
+                {value:'112' , label:'TRANSICIÓN B MAÑANA'},
+                {value:'113' , label:'TRANSICIÓN C MAÑANA'},
+                {value:'114' , label:'TRANSICIÓN D MAÑANA'},
+                {value:'115' , label:'TRANSICIÓN E MAÑANA'},
+                {value:'116' , label:'TRANSICIÓN F MAÑANA'},
+                {value:'201' , label:'SEGUNDO A'},
+                {value:'202' , label:'SEGUNDO B'},
+                {value:'203' , label:'SEGUNDO C'},
+                {value:'204' , label:'SEGUNDO D'},
+                {value:'205' , label:'SEGUNDO E'},
+                {value:'206' , label:'SEGUNDO F'},
+                {value:'207' , label:'SEGUNDO G'},
+                {value:'208' , label:'SEGUNDO H'},
+                {value:'209' , label:'SEGUNDO I'},
+                {value:'301' , label:'TERCERO A'},
+                {value:'302' , label:'TERCERO B'},
+                {value:'303' , label:'TERCERO C'},
+                {value:'304' , label:'TERCERO D'},
+                {value:'305' , label:'TERCERO E'},
+                {value:'306' , label:'TERCERO F'},
+                {value:'307' , label:'TERCERO G'},
+                {value:'308' , label:'TERCERO H'},
+                {value:'401' , label:'CUARTO A'},
+                {value:'402' , label:'CUARTO B'},
+                {value:'403' , label:'CUARTO C'},
+                {value:'404' , label:'CUARTO D'},
+                {value:'405' , label:'CUARTO E'},
+                {value:'406' , label:'CUARTO F'},
+                {value:'407' , label:'CUARTO G'},
+                {value:'408' , label:'CUARTO H'},
+                {value:'501' , label:'QUINTO A'},
+                {value:'502' , label:'QUINTO B'},
+                {value:'503' , label:'QUINTO C'},
+                {value:'504' , label:'QUINTO D'},
+                {value:'505' , label:'QUINTO E'},
+                {value:'506' , label:'QUINTO F'},
+                {value:'507' , label:'QUINTO G'},
+                {value:'508' , label:'QUINTO H'},
+                {value:'601' , label:'SEXTO A'},
+                {value:'602' , label:'SEXTO B'},
+                {value:'603' , label:'SEXTO C'},
+                {value:'604' , label:'SEXTO D'},
+                {value:'605' , label:'SEXTO E'},
+                {value:'606' , label:'SEXTO F'},
+                {value:'607' , label:'SEXTO G'},
+                {value:'608' , label:'SEXTO H'},
+                {value:'609' , label:'SEXTO I'},
+                {value:'701' , label:'SEPTIMO A'},
+                {value:'702' , label:'SEPTIMO B'},
+                {value:'703' , label:'SEPTIMO C'},
+                {value:'704' , label:'SEPTIMO D'},
+                {value:'705' , label:'SEPTIMO E'},
+                {value:'706' , label:'SEPTIMO F'},
+                {value:'707' , label:'SEPTIMO G'},
+                {value:'708' , label:'SEPTIMO H'},
+                {value:'709' , label:'SEPTIMO I'},
+                {value:'801' , label:'OCTAVO A'},
+                {value:'802' , label:'OCTAVO B'},
+                {value:'803' , label:'OCTAVO C'},
+                {value:'804' , label:'OCTAVO D'},
+                {value:'805' , label:'OCTAVO E'},
+                {value:'806' , label:'OCTAVO F'},
+                {value:'807' , label:'OCTAVO G'},
+                {value:'808' , label:'OCTAVO H'},
+                {value:'901' , label:'NOVENO A'},
+                {value:'902' , label:'NOVENO B'},
+                {value:'903' , label:'NOVENO C'},
+                {value:'904' , label:'NOVENO D'},
+                {value:'905' , label:'NOVENO E'},
+                {value:'906' , label:'NOVENO F'},
+                {value:'907' , label:'NOVENO G'},
+                {value:'908' , label:'NOVENO H'},
+                {value:'1001' , label:'DÉCIMO A'},
+                {value:'1002' , label:'DÉCIMO B'},
+                {value:'1003' , label:'DÉCIMO C'},
+                {value:'1004' , label:'DÉCIMO D'},
+                {value:'1005' , label:'DÉCIMO E'},
+                {value:'1006' , label:'DÉCIMO F'},
+                {value:'1007' , label:'DÉCIMO G'},
+                {value:'1008' , label:'DÉCIMO H'},
+                {value:'1101' , label:'ONCE A'},
+                {value:'1102' , label:'ONCE B'},
+                {value:'1103' , label:'ONCE C'},
+                {value:'1104' , label:'ONCE D'},
+                {value:'1105' , label:'ONCE E'},
+                {value:'1106' , label:'ONCE F'},
+                {value:'1107' , label:'ONCE G'},
+                {value:'1108' , label:'ONCE H'},
+
+            ],
+            candidate: [],
+
+
+        },
+        methods: {
+
+        },
+        mounted(){
+
+            fetch('./fun/results.php', {
+                'method': 'GET'
+            }).then((response) => {
+                return response.json()
+            }).then((data) => {
+
+                let datos = data.data.resultados;
+                datos.forEach((d)=>{
+                   console.log(d);
+                    app.candidate = d;
+                   switch (d.cargo) {
+                       case '1':
+                           if (d.jornada === "1")
+                           {
+                               d.jornada = "MAÑANA";
+                           }
+                           else{
+                               d.jornada = "TARDE";
+                           }
+                           app.representante.push(this.candidate);
+                           break;
+                       case '2':
+                           app.personero.push(this.candidate);
+                           break;
+                       case '3':
+                           app.docente.push(this.candidate);
+                           break;
+                   }
+
+                });
+
+            })
+
+
+
+        },
+    });
+</script>
+<style>
+    #imagenCandidato {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #imagenCandidato:hover {opacity: 0.7;}
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    /* Add Animation */
+    .modal-content, #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)}
+        to {-webkit-transform:scale(1)}
+    }
+
+    @keyframes zoom {
+        from {transform:scale(0)}
+        to {transform:scale(1)}
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+        .modal-content {
+            width: 100%;
+        }
+    }
+</style>
+
+</body>
+
+</html>

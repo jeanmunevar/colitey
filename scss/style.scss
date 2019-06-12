@@ -1440,6 +1440,8 @@ img {
             &.collapsed {
                 @include bg-gradients;
                 color: $white-color;
+                background: #c32f21;
+
                 span {
                     &.accor-close {
                         opacity: 0;

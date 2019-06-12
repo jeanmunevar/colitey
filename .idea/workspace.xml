@@ -2,10 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dbd3d58-4d6d-44ec-9fe0-331ed786a1c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/console/css/main_console.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/console/docentes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/console/files.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/console/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/console/js/main_console.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/console/news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contactUs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/preeminent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docentes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/contactenos/contactUs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/contactenos/contactUs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/docentes/docentes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/docentes/subir_listar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/docentes/subir_listar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/documentosInstitucionales/descargar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/documentosInstitucionales/subir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/documentosInstitucionales/subir.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/results.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/showArticles/jornadas_noticias.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/showArticles/show.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/showArticles/show.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/showArticles/show2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/showArticles/showMessages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/uploadArticles/article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fun/uploadArticles/article.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gallery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/jornada/developer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/jornada/math.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/jornada/minedu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/jornada/science.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery.flexslider-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery.flexslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jssor.slider-27.5.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/vue-carousel.common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/vue-carousel.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/vue-carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/vue-carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/vue/vue.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preeminent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/itey.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/itey.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/owl.carousel.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/owl.carousel.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fun/adminVoting.php" beforeDir="false" afterPath="$PROJECT_DIR$/fun/adminVoting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fun/candidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/fun/candidate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fun/conexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/fun/conexion.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fun/createVote.php" beforeDir="false" afterPath="$PROJECT_DIR$/fun/createVote.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fun/prueba.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fun/voting.php" beforeDir="false" afterPath="$PROJECT_DIR$/fun/voting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bg-img/gallery1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg-img/gallery1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bg-img/gallery2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg-img/gallery2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bg-img/gallery3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg-img/gallery3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bg-img/gallery4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg-img/gallery4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bg-img/gallery5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg-img/gallery5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bg-img/gallery6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg-img/gallery6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/school-images/logo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/school-images/logo1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/school-images/tarjeton/d02.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/img/school-images/tarjeton/d02.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/active.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/active.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/adminLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/adminLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/candidatos.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/candidatos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/google-map/map-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/google-map/map-active.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery/jquery-2.2.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery/jquery-2.2.4.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/plugins/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/plugins/plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_mixin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_mixin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_responsive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_theme_color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_theme_color.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/voting.html" beforeDir="false" afterPath="$PROJECT_DIR$/voting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/votingAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/votingAdmin.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,71 +105,72 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itey" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itey" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itey" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="coliteye_votaciones: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itey" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="coliteye_votaciones: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="publicaciones: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/voting.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/contactUs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="320" column="109" selection-start-line="320" selection-start-column="109" selection-end-line="320" selection-end-column="109" />
+            <state relative-caret-position="225">
+              <caret line="99" column="56" selection-start-line="99" selection-start-column="56" selection-end-line="99" selection-end-column="56" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#section#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#STYLE#0;n#h4#0;n#div#0;n#div#0;n#form#0;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#1;n#div#0;n#div#0;n#form#0;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#2;n#div#0;n#div#0;n#form#0;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#1;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#form#1;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#form#2;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#STYLE#0;n#h4#0;n#div#0;n#div#0;n#form#2;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#1;n#div#0;n#div#0;n#form#2;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fun/voting.php">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="65" column="64" lean-forward="true" selection-start-line="65" selection-start-column="64" selection-end-line="65" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fun/candidate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="96" column="41" lean-forward="true" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-341">
-              <caret line="326" column="30" selection-start-line="326" selection-start-column="30" selection-end-line="326" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/candidatos.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-327">
-              <caret line="223" column="46" lean-forward="true" selection-start-line="223" selection-start-column="46" selection-end-line="223" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fun/createVote.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="41" column="81" selection-start-line="41" selection-start-column="81" selection-end-line="41" selection-end-column="81" />
+            <state relative-caret-position="317">
+              <caret line="101" column="86" lean-forward="true" selection-start-line="96" selection-start-column="44" selection-end-line="101" selection-end-column="86" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#6;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,43 +180,44 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>call</find>
-      <find>academy-logo</find>
-      <find>brad</find>
-      <find>logo</find>
-      <find>vota</find>
-      <find>meet</find>
-      <find>regist</find>
-      <find>contacto</find>
+      <find>boot</find>
+      <find>error al con</find>
+      <find>error</find>
+      <find>documento</find>
+      <find>update</find>
       <find>admin</find>
-      <find>scr</find>
-      <find>zona</find>
-      <find>administra</find>
-      <find>form</find>
-      <find>todo</find>
-      <find>app</find>
-      <find>agre</find>
-      <find>{{}}</find>
-      <find>AGRE</find>
-      <find>adminLo</find>
-      <find>99</find>
-      <find>editando = tr</find>
-      <find>candidate</find>
-      <find>pus</find>
-      <find>Esc</find>
-      <find>style</find>
-      <find>get</find>
-      <find>tipo</find>
-      <find>v-bind:va</find>
-      <find>vote</find>
-      <find>votaPerson</find>
+      <find>echo</find>
+      <find>eliminado</find>
+      <find>publicacion</find>
+      <find>publicacion ac</find>
+      <find>$_FILES['documento']</find>
+      <find>archivo ac</find>
+      <find>error al sub</find>
+      <find>9</find>
+      <find>publicacion actualizada 3</find>
+      <find>bread</find>
+      <find>slide</find>
+      <find>fa</find>
+      <find>table</find>
+      <find>heig</find>
+      <find>error al subir</find>
+      <find>academyNa</find>
+      <find>insert</find>
+      <find>avisos</find>
+      <find>actualizado</find>
+      <find>2</find>
+      <find>cuerp</find>
+      <find>$cuerp</find>
+      <find>contacte</find>
+      <find>$nota</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -135,38 +226,75 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scss/_mixin.scss" />
-        <option value="$PROJECT_DIR$/scss/style.scss" />
-        <option value="$PROJECT_DIR$/register.html" />
-        <option value="$PROJECT_DIR$/voting_now.php" />
-        <option value="$PROJECT_DIR$/voting.php" />
-        <option value="$PROJECT_DIR$/php/conexion.php" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/preeminent.css" />
+        <option value="$PROJECT_DIR$/console/posts/estudiantesDestacados.js" />
+        <option value="$PROJECT_DIR$/console/posts/php/asdasd.php" />
+        <option value="$PROJECT_DIR$/console/posts/php/estudiantesDestacados.php" />
+        <option value="$PROJECT_DIR$/console/posts/js/estudiantesDestacados.js" />
+        <option value="$PROJECT_DIR$/fun/showArticles/show2.js" />
+        <option value="$PROJECT_DIR$/blog.html" />
+        <option value="$PROJECT_DIR$/gallery.vue" />
+        <option value="$PROJECT_DIR$/galleryV.vue" />
+        <option value="$PROJECT_DIR$/template.vue" />
         <option value="$PROJECT_DIR$/fun/conexion.php" />
-        <option value="$PROJECT_DIR$/js/aDAS.php" />
-        <option value="$PROJECT_DIR$/fun/adminVoting.php" />
-        <option value="$PROJECT_DIR$/js/adminLogin.js" />
-        <option value="$PROJECT_DIR$/votingAdmin.html" />
-        <option value="$PROJECT_DIR$/fun/candidate.php" />
-        <option value="$PROJECT_DIR$/add.html" />
-        <option value="$PROJECT_DIR$/js/candidatos.js" />
+        <option value="$PROJECT_DIR$/jornada/preescolar.html" />
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/fun/prueba.php" />
-        <option value="$PROJECT_DIR$/fun/voting.php" />
-        <option value="$PROJECT_DIR$/voting.html" />
-        <option value="$PROJECT_DIR$/fun/createVote.php" />
-        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/fun/showArticles/show.js" />
+        <option value="$PROJECT_DIR$/fun/showArticles/jornadas_noticias.js" />
+        <option value="$PROJECT_DIR$/fun/index.html" />
+        <option value="$PROJECT_DIR$/fun/descargaDocumentos/descargar.js" />
+        <option value="$PROJECT_DIR$/console/css/main_console.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/43cee799-9bbd-40c2-aa78-2b7b3632c941/console.sql" />
+        <option value="$PROJECT_DIR$/fun/documentosInstitucionales/prueba.php" />
+        <option value="$PROJECT_DIR$/fun/documentosInstitucionales/descargar.js" />
+        <option value="$PROJECT_DIR$/js/adminLogin.js" />
+        <option value="$PROJECT_DIR$/fun/docentes/listadoDocentes.js" />
+        <option value="$PROJECT_DIR$/console/docentes.html" />
+        <option value="$PROJECT_DIR$/fun/docentes/subir_listar.js" />
+        <option value="$PROJECT_DIR$/fun/docentes/subir_listar.php" />
+        <option value="$PROJECT_DIR$/console/index.html" />
+        <option value="$PROJECT_DIR$/fun/documentosInstitucionales/subir.php" />
+        <option value="$PROJECT_DIR$/fun/documentosInstitucionales/subir.js" />
+        <option value="$PROJECT_DIR$/console/files.html" />
+        <option value="$PROJECT_DIR$/jornada/index.html" />
+        <option value="$PROJECT_DIR$/docentes.html" />
+        <option value="$PROJECT_DIR$/institucional.html" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/redes.html" />
+        <option value="$PROJECT_DIR$/preeminent.html" />
+        <option value="$PROJECT_DIR$/votingAdmin.html" />
+        <option value="$PROJECT_DIR$/results.html" />
+        <option value="$PROJECT_DIR$/gallery.html" />
+        <option value="$PROJECT_DIR$/documentos.html" />
+        <option value="$PROJECT_DIR$/console/news.html" />
+        <option value="$PROJECT_DIR$/fun/uploadArticles/article.php" />
+        <option value="$PROJECT_DIR$/fun/showArticles/showMessages.js" />
+        <option value="$PROJECT_DIR$/messages.html" />
+        <option value="$PROJECT_DIR$/contec.html" />
+        <option value="$PROJECT_DIR$/fun/contactenos/contactUs.js" />
+        <option value="$PROJECT_DIR$/noticias.html" />
+        <option value="$PROJECT_DIR$/fun/contactenos/contactUs.php" />
+        <option value="$PROJECT_DIR$/fun/uploadArticles/article.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/contactUs.html" />
       </list>
     </option>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="617" />
-    <option name="y" value="24" />
+    <option name="x" value="319" />
+    <option name="y" value="6" />
     <option name="width" value="1382" />
-    <option name="height" value="717" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -174,6 +302,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,29 +310,42 @@
               <item name="itey" type="b2602c69:ProjectViewProjectNode" />
               <item name="itey" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="itey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="itey" type="462c0819:PsiDirectoryNode" />
-              <item name="fun" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="itey" type="b2602c69:ProjectViewProjectNode" />
-              <item name="itey" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lilium" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\itey\img\jornada" />
+      <recent name="C:\xampp1\htdocs\itey\js" />
+      <recent name="C:\xampp1\htdocs\itey\console\posts\js" />
+      <recent name="C:\xampp1\htdocs\itey\console\posts" />
+      <recent name="C:\xampp1\htdocs\itey\console" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\itey\css" />
+      <recent name="C:\xampp1\htdocs\itey\js" />
+      <recent name="C:\xampp\htdocs\itey\content" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -216,6 +358,20 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://ftp.colitey.edu.co/index.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="estudiantesDestacados.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/console/posts/php/estudiantesDestacados.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.estudiantesDestacados.php" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -264,22 +420,98 @@
       <workItem from="1552239872351" duration="4000" />
       <workItem from="1552350638921" duration="4031000" />
       <workItem from="1552436993264" duration="17231000" />
-      <workItem from="1552524422698" duration="3836000" />
+      <workItem from="1552524422698" duration="4454000" />
+      <workItem from="1552612258661" duration="2312000" />
+      <workItem from="1552701523593" duration="3130000" />
+      <workItem from="1552831171241" duration="20089000" />
+      <workItem from="1552859094170" duration="161000" />
+      <workItem from="1552880643022" duration="529000" />
+      <workItem from="1553013536002" duration="592000" />
+      <workItem from="1553189817228" duration="2871000" />
+      <workItem from="1553215265643" duration="412000" />
+      <workItem from="1553215705849" duration="1929000" />
+      <workItem from="1553219222258" duration="314000" />
+      <workItem from="1553375067553" duration="597000" />
+      <workItem from="1553445511808" duration="9789000" />
+      <workItem from="1553526572825" duration="4532000" />
+      <workItem from="1553559328412" duration="5000" />
+      <workItem from="1553560529789" duration="181000" />
+      <workItem from="1553649727342" duration="799000" />
+      <workItem from="1553822712657" duration="1000" />
+      <workItem from="1553827239746" duration="5000" />
+      <workItem from="1554431842250" duration="5568000" />
+      <workItem from="1554495934011" duration="607000" />
+      <workItem from="1554499148313" duration="921000" />
+      <workItem from="1554514721481" duration="319000" />
+      <workItem from="1555610060655" duration="8167000" />
+      <workItem from="1555620830242" duration="592000" />
+      <workItem from="1555623538511" duration="21211000" />
+      <workItem from="1555691029492" duration="387000" />
+      <workItem from="1555691453988" duration="44091000" />
+      <workItem from="1555785705827" duration="24806000" />
+      <workItem from="1555993172604" duration="617000" />
+      <workItem from="1556589675673" duration="10446000" />
+      <workItem from="1556672605174" duration="675000" />
+      <workItem from="1556673706178" duration="6273000" />
+      <workItem from="1557106627381" duration="4000" />
+      <workItem from="1557114149341" duration="21000" />
+      <workItem from="1557189736902" duration="4211000" />
+      <workItem from="1557201343508" duration="1178000" />
+      <workItem from="1557274905191" duration="592000" />
+      <workItem from="1557278697924" duration="6462000" />
+      <workItem from="1557367978556" duration="1124000" />
+      <workItem from="1557793115108" duration="1160000" />
+      <workItem from="1557798588606" duration="1794000" />
+      <workItem from="1557880774774" duration="3347000" />
+      <workItem from="1557886733596" duration="4071000" />
+      <workItem from="1557936474374" duration="1798000" />
+      <workItem from="1557964275900" duration="778000" />
+      <workItem from="1558057147214" duration="1312000" />
+      <workItem from="1558283666014" duration="6958000" />
+      <workItem from="1558398933733" duration="3562000" />
+      <workItem from="1558537928742" duration="9000" />
+      <workItem from="1558654162204" duration="9263000" />
+      <workItem from="1558800703590" duration="33864000" />
+      <workItem from="1558886755277" duration="38620000" />
+      <workItem from="1559012329954" duration="1179000" />
+      <workItem from="1559093640556" duration="5784000" />
+      <workItem from="1559173365105" duration="14879000" />
+      <workItem from="1559335792181" duration="46000" />
+      <workItem from="1559436752494" duration="6006000" />
+      <workItem from="1559448360197" duration="5226000" />
+      <workItem from="1559489344092" duration="21100000" />
+      <workItem from="1559532322307" duration="2001000" />
+      <workItem from="1559575424672" duration="30225000" />
+      <workItem from="1559614558734" duration="16772000" />
+      <workItem from="1559631654843" duration="238000" />
+      <workItem from="1559654558521" duration="2136000" />
+      <workItem from="1559690408696" duration="12627000" />
+      <workItem from="1559708815752" duration="380000" />
+      <workItem from="1559773971340" duration="8613000" />
+      <workItem from="1559785336219" duration="20972000" />
+      <workItem from="1559828484904" duration="2863000" />
+      <workItem from="1560221350963" duration="614000" />
+      <workItem from="1560270854420" duration="2371000" />
+      <workItem from="1560301427719" duration="14457000" />
+      <workItem from="1560316567192" duration="3124000" />
+      <workItem from="1560320134347" duration="2068000" />
+      <workItem from="1560322786518" duration="806000" />
+      <workItem from="1560341231674" duration="7726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236058000" />
+    <option name="totallyTimeSpent" value="711945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26399395" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991453" visible="true" weight="0.21028744" />
+      <window_info id="Structure" order="1" sideWeight="0.50085473" side_tool="true" weight="0.22012103" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32991454" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.34529915" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -287,21 +519,23 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Quokka" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32991454" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32991454" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32991454" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.33846155" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.2193646" />
+      <window_info anchor="right" id="Remote Host" order="4" weight="0.34114978" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25642964" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991453" visible="true" weight="0.19591528" />
+      <window_info id="Structure" order="1" sideWeight="0.50085473" side_tool="true" weight="0.22012103" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32991454" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.34529915" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -309,108 +543,390 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Quokka" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32991454" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32991454" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32991454" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.33846155" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.27987897" />
+      <window_info anchor="right" id="Remote Host" order="4" weight="0.34114978" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/style.css.map">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_responsive.scss">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        <state relative-caret-position="330">
+          <caret line="1023" column="17" lean-forward="true" selection-start-line="1023" selection-start-column="17" selection-end-line="1023" selection-end-column="17" />
+          <folding>
+            <element signature="e#11379#11418#0" />
+            <element signature="e#11453#11532#0" />
+            <element signature="e#11643#11669#0" />
+            <element signature="e#11676#11809#0" />
+            <element signature="e#11814#11924#0" />
+            <element signature="e#11964#12016#0" />
+            <element signature="e#12023#12142#0" />
+            <element signature="e#12182#12257#0" />
+            <element signature="e#12375#12405#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_mixin.scss">
+    <entry file="file://$PROJECT_DIR$/fun/showArticles/show2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fun/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/files1" />
+    <entry file="file://$PROJECT_DIR$/console/css/estilos.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/css/main_console.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="228" column="10" selection-start-line="228" selection-start-column="10" selection-end-line="228" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/css/main_console.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/43cee799-9bbd-40c2-aa78-2b7b3632c941/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/43cee799-9bbd-40c2-aa78-2b7b3632c941/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fun/conexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fun/documentosInstitucionales/prueba.php" />
+    <entry file="file://$PROJECT_DIR$/fun/showArticles/jornadas_noticias.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-end-line="84" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fun/documentosInstitucionales/descargar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
-          <caret line="64" column="24" lean-forward="true" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+          <caret line="21" column="109" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="109" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/bg-img/t1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/style.scss">
+    <entry file="file://$PROJECT_DIR$/js/adminLogin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34546">
-          <caret line="1502" selection-start-line="1502" selection-end-line="1502" />
+        <state relative-caret-position="391">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contact.html">
+    <entry file="file://$PROJECT_DIR$/fun/docentes/docentes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="23" selection-end-line="320" selection-end-column="7" />
+        <state relative-caret-position="115">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fun/docentes/listadoDocentes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/docentes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1191">
+          <caret line="86" column="95" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/files.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fun/docentes/subir_listar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="109" column="30" lean-forward="true" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+          <folding>
+            <element signature="e#317#3568#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fun/documentosInstitucionales/subir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2852">
+          <caret line="124" column="12" selection-start-line="124" selection-start-column="12" selection-end-line="126" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fun/documentosInstitucionales/subir.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="113" column="8" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="67" />
+          <folding>
+            <element signature="e#366#3502#0#PHP" />
+            <element signature="e#5106#7948#0#PHP" />
+            <element signature="e#6853#7148#0#PHP" />
+            <element signature="e#7183#7948#0#PHP" />
+            <element signature="e#8869#9097#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="140" column="1" lean-forward="true" selection-start-line="140" selection-start-column="1" selection-end-line="303" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docentes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="166" column="94" lean-forward="true" selection-start-line="166" selection-start-column="94" selection-end-line="166" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preeminent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="96" column="16" lean-forward="true" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#img#3;n#ul#0;n#div#1;n#div#1;n#nav#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#section#0;n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
+        <state relative-caret-position="23">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/institucional.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="141" column="96" selection-start-line="141" selection-start-column="96" selection-end-line="141" selection-end-column="96" />
           <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#img#1;n#ul#0;n#div#1;n#div#1;n#nav#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#nav#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#img#3;n#ul#0;n#div#1;n#div#1;n#nav#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#div#0;n#div#0;n#article#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="117" column="10" lean-forward="true" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="10" />
+          <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#STYLE#0;n#h3#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/voting_now.php" />
-    <entry file="file://$PROJECT_DIR$/about-us.html">
+    <entry file="file://$PROJECT_DIR$/jornada/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="250" selection-end-column="14" />
+        <state relative-caret-position="92">
+          <caret line="131" column="14" lean-forward="true" selection-start-line="131" selection-start-column="14" selection-end-line="131" selection-end-column="14" />
           <folding>
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/fun/showArticles/show.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2213">
-          <caret line="120" column="90" selection-start-line="120" selection-start-column="90" selection-end-line="120" selection-end-column="90" />
+        <state relative-caret-position="483">
+          <caret line="21" lean-forward="true" selection-end-line="37" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="77" column="121" selection-start-line="77" selection-start-column="121" selection-end-line="77" selection-end-column="121" />
           <folding>
-            <element signature="n#style#0;n#img#1;n#ul#0;n#div#1;n#div#1;n#nav#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#STYLE#0;n#h3#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/aDAS.php" />
-    <entry file="file://$PROJECT_DIR$/fun/adminVoting.php" />
-    <entry file="file://$PROJECT_DIR$/conexion.php" />
-    <entry file="file://$PROJECT_DIR$/js/adminLogin.js">
+    <entry file="file://$PROJECT_DIR$/fun/showArticles/show.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        <state relative-caret-position="575">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documentos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fun/showArticles/showMessages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="54" column="59" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fun/contactenos/contactUs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fun/docentes/subir_listar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="57" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="141" column="25" selection-end-line="321" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/noticias.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="170" column="32" selection-start-line="170" selection-start-column="32" selection-end-line="170" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#br#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fun/contactenos/contactUs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/votingAdmin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1996">
-          <caret line="159" column="54" lean-forward="true" selection-start-line="159" selection-start-column="54" selection-end-line="159" selection-end-column="54" />
+        <state relative-caret-position="-273">
+          <caret line="122" column="41" lean-forward="true" selection-start-line="122" selection-start-column="41" selection-end-line="122" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -419,95 +935,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/voting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="185" column="32" selection-start-line="185" selection-start-column="32" selection-end-line="185" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fun/uploadArticles/article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="106" column="9" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="9" />
+          <folding>
+            <element signature="e#324#3557#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fun/uploadArticles/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="56" column="49" lean-forward="true" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listadoCandidatos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="217" column="100" selection-start-line="217" selection-start-column="95" selection-end-line="217" selection-end-column="100" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="104" column="39" selection-start-line="104" selection-start-column="39" selection-end-line="104" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="189" column="62" selection-start-line="189" selection-start-column="24" selection-end-line="189" selection-end-column="62" />
+        <state relative-caret-position="302">
+          <caret line="144" column="49" selection-start-line="144" selection-start-column="49" selection-end-line="144" selection-end-column="49" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#article#0;n#section#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#5;n#tr#1;n#table#0;n#article#0;n#section#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="1250" column="1" selection-start-line="1250" selection-start-column="1" selection-end-line="1250" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fun/prueba.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fun/conexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fun/voting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="65" column="64" lean-forward="true" selection-start-line="65" selection-start-column="64" selection-end-line="65" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/candidatos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-327">
-          <caret line="223" column="46" lean-forward="true" selection-start-line="223" selection-start-column="46" selection-end-line="223" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/voting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="320" column="109" selection-start-line="320" selection-start-column="109" selection-end-line="320" selection-end-column="109" />
+        <state relative-caret-position="317">
+          <caret line="101" column="86" lean-forward="true" selection-start-line="96" selection-start-column="44" selection-end-line="101" selection-end-column="86" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#STYLE#0;n#h4#0;n#div#0;n#div#0;n#form#0;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#1;n#div#0;n#div#0;n#form#0;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#2;n#div#0;n#div#0;n#form#0;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#1;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#form#1;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#form#2;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#STYLE#0;n#h4#0;n#div#0;n#div#0;n#form#2;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#1;n#div#0;n#div#0;n#form#2;n#section#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fun/createVote.php">
+    <entry file="file://$PROJECT_DIR$/contactUs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="41" column="81" selection-start-line="41" selection-start-column="81" selection-end-line="41" selection-end-column="81" />
+        <state relative-caret-position="225">
+          <caret line="99" column="56" selection-start-line="99" selection-start-column="56" selection-end-line="99" selection-end-column="56" />
+          <folding>
+            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fun/candidate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="96" column="41" lean-forward="true" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-341">
-          <caret line="326" column="30" selection-start-line="326" selection-start-column="30" selection-end-line="326" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

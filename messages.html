@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Colegio ITEY</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="img/school-images/escudo.png">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+
+
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-- ##### Preloader ##### -->
+<div id="preloader">
+    <i class="circle-preloader"></i>
+</div>
+
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
+
+    <!-- Top Header Area -->
+    <div class="top-header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <div class="header-content h-100 d-flex align-items-center justify-content-between">
+                        <div class="academy-logo">
+                            <a href="./"><img src="img/school-images/logo1.png" width="80%" alt=""></a>
+                        </div>
+                        <div class="login-content">
+                            <!--<a href="#">Registrese</a> / <a href="#">Ingrese</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Area -->
+    <div class="academy-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Menu -->
+
+                <nav class="classy-navbar justify-content-between" id="academyNav">
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- close btn -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <img src="./img/icons/inicio.png" width="2%" class="iconos-ocultos" alt="">
+                                <li><a href="./">Inicio</a></li>
+                                <img src="./img/icons/INSTITUCIONAL.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                <li><a href="./institucional"> Institucional</a></li>
+                                <img src="./img/icons/escuela.png" alt="" width="4%">
+                                <li><a href="#">Jornada escolar</a>
+                                    <ul class="dropdown">
+                                        <li><a href="institucional">Primaria</a></li>
+                                        <li><a href="institucional">Secundaria</a></li>
+                                        <li><a href="institucional">Complementaria</a></li>
+                                        <li><a href="institucional">Media técnica</a></li>
+                                        <li><a href="institucional">Preescolar</a></li>
+                                    </ul>
+                                </li>
+                                <img src="./img/icons/hombre-corriendo.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                <li><a href="#">Zona rápida</a>
+                                    <ul class="dropdown">
+                                        <li><a href="voting">Votaciones</a></li>
+                                        <li><a href="./votingAdmin">Administrador</a></li>
+                                        <li><a href="./results">Resultados</a></li>
+                                    </ul>
+                                </li>
+                                <img src="./img/icons/contacto.png" alt="" class="iconos-ocultos" width="3%" style="margin-left: 2%; ">
+                                <li><a href="institucional">Contactenos</a></li>
+                            </ul>
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Hero Area Start ##### -->
+
+<!-- ##### Hero Area End ##### -->
+
+<div>
+
+    <div class="breadcumb-area bg-img" style="background-image: url(img/school-images/slide.jpg);">
+        <div class="bradcumbContent">
+            <h2>Mensajes</h2>
+        </div>
+    </div>
+    <!-- ##### Top Feature Area End ##### -->
+    <div style="margin-top: 2%">
+
+    </div>
+    <!-- ##### Course Area Start ##### -->
+    <div class="academy-courses-area section-padding-100-0">
+        <div class="container">
+            <h5 style="margin-bottom: 4%">
+                Enterate de las acontecimientos y mensajes mas recientes
+            </h5>
+            <!--Aqui va el contenido interno-->
+            <div class="col-md-12" style="display: inline" id="app">
+
+                <div class="post-it" v-for="message in messages">
+                    <p class="sticky taped">
+                        <strong>{{message.titulo}}</strong><br>
+                        <span >{{message.fechaCreacion}}</span>
+                        <br>
+                        <span>{{message.prefacio}}</span>
+                    </p>
+                    </div>
+        </div>
+        <br>
+    </div>
+
+
+</div>
+
+<footer class="footer-area">
+    <div class="main-footer-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <a href=""><h3 STYLE="color: white;">Colegio ITEY</h3></a>
+                        </div>
+                        <p>Hoy tengo ganas de hacer la mejor canción del mundo Que sea traducida, la entiendan en todo el mundo Nunca habrá revolución sin evolución de conciencias</p>
+                        <div class="footer-social-info">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <h6>Enlaces útiles</h6>
+                        </div>
+                        <nav>
+                            <ul class="useful-links">
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Servicios</a></li>
+                                <li><a href="#">Academico</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <h6>Galería</h6>
+                        </div>
+                        <div class="gallery-list d-flex justify-content-between flex-wrap">
+                            <a href="img/bg-img/gallery1.jpg" class="gallery-img" title="Gallery Image 1"><img src="img/bg-img/gallery1.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery2.jpg" class="gallery-img" title="Gallery Image 2"><img src="img/bg-img/gallery2.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery3.jpg" class="gallery-img" title="Gallery Image 3"><img src="img/bg-img/gallery3.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery4.jpg" class="gallery-img" title="Gallery Image 4"><img src="img/bg-img/gallery4.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery5.jpg" class="gallery-img" title="Gallery Image 5"><img src="img/bg-img/gallery5.jpg" alt=""></a>
+                            <a href="img/bg-img/gallery6.jpg" class="gallery-img" title="Gallery Image 6"><img src="img/bg-img/gallery6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <h6>Contacto</h6>
+                        </div>
+                        <div class="single-contact d-flex mb-30">
+                            <i class="icon-placeholder"></i>
+                            <p>Carrera 21 No 39 05</p>
+                        </div>
+                        <div class="single-contact d-flex mb-30">
+                            <i class="icon-telephone-1"></i>
+                            <p>Telefonos <br> 6343559</p>
+                        </div>
+                        <div class="single-contact d-flex">
+                            <i class="icon-contract"></i>
+                            <p>colegioitey@itey.edu.co</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- ##### Footer Area Start ##### -->
+
+<!-- ##### All Javascript Script ##### -->
+<!-- jQuery-2.2.4 js -->
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="js/bootstrap/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<!-- All Plugins js -->
+<script src="js/plugins/plugins.js"></script>
+<!-- Active js -->
+<script src="js/active.js"></script>
+</body>
+<style>
+
+
+
+    .sticky {
+        /*-webkit-box-shadow: #DDD 0px 1px 2px;*/
+       position: initial;
+        background-color: #F4F39E;
+        border-color: #DEE184;
+        color: #47576B;
+        text-align: center;
+        margin: 2.5em 0px;
+        padding: 1.5em 1em;
+        -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+        box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+        width: 33%;
+        height: 33%;
+
+        -ms-flex: auto;
+    }
+    .post-it {
+        max-width: 33%;
+        margin: 5em 0 5em 0;
+        position: relative;
+        display: inline;
+
+
+    }
+    .taped {
+        margin: 5%;
+        display: inline-table;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 1.3em;
+    }
+
+
+    .note {
+        /*-webkit-box-shadow: #DDD 0px 1px 2px;*/
+        position: relative;
+        background-color: #F4F39E;
+        border-color: #DEE184;
+        text-align: center;
+        margin: 1.5em auto;
+        padding: 1.5em 1em;
+        -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+        box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+        -webkit-transform: rotate(2deg);
+        -moz-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        transform: rotate(2deg);
+        width: 250px;
+        font-family: 'The Girl Next Door', cursive; /*originally with brain flower font*/
+        font-size: 1em;
+    }
+    .note:after {
+        display: block;
+        content: "";
+
+        width: 110px;
+        height: 30px;
+        top: -21px;
+        left: 30%;
+        border: 1px solid #fff;
+        background: rgba(254, 254, 254, .6);
+        -webkit-box-shadow: 0px 0 3px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 0 3px rgba(0,0,0,0.1);
+        box-shadow: 0px 0 3px rgba(0,0,0,0.1);
+    }
+
+
+</style>
+<script src="./fun/showArticles/showMessages.js"></script>
+</html>
